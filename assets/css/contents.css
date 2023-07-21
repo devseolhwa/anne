@@ -69,7 +69,7 @@
 .selectBox.disabled .btnSelect{background-color: #F2F2F2;color: #777;pointer-events: none;}
 
 .iconPapercheckLg{display: block;margin-bottom: 35px;}
-.iconPapercheckLg img{display: block;margin: 0 auto;}
+.iconPapercheckLg img{display: block;width: 40px;height: 44px;margin: 0 auto;}
 .iconPapercheckSm{margin-bottom: 20px; font-size: 16px;color: #444;font-weight: 500;line-height: 26px;}
 .iconPapercheckSm img{width: 20px;height: 22px;margin-right: 10px;vertical-align: -5px;}
 
@@ -579,7 +579,7 @@
     .selectBox.type2 .selectList li a{font-size: 13px;}
 
     .iconPapercheckLg{margin-bottom: 25px;}
-    .iconPapercheckLg img{width: 31px;height: 34px;}
+    .iconPapercheckLg img{width: 30px;height: 34px;}
     .iconPapercheckSm{margin-bottom: 15px;font-size: 14px;line-height: 22px;text-align: center;}
     .iconPapercheckSm img{display: block;margin: 0 auto 10px;}
 
