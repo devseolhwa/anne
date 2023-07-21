@@ -6,12 +6,16 @@
     <title>Anne</title>
 
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">    
     <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
     
     <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/com.js"></script>
     <script src="../assets/js/lib/slick.min.js"></script>
     <script src="../assets/js/ui.js"></script>
     <script src="../assets/js/contents.js"></script>
@@ -20,7 +24,7 @@
 <body>
     <div id="skipNav">
         <a href="#contents">本文に移動</a><!-- 본문바로가기 -->
-        <a href="#">メニューに移動</a><!-- 메뉴바로가기 -->
+        <a href="#gnb">メニューに移動</a><!-- 메뉴바로가기 -->
     </div>
 
     <div class="wrap">
@@ -192,19 +196,21 @@
                             <strong>2023年 4月 21日</strong>
                             <button type="button" class="next"><img src="../assets/images/arrow_calendar_lg.png" alt=""></button>
                         </div>
-                        <div class="timeList">
-                            <button type="button">10:00</button>
-                            <button type="button">11:00</button>
-                            <button type="button">12:00</button>
-                            <button type="button">13:00</button>
-                            <button type="button">14:00</button>
-                            <button type="button">15:00</button>
-                            <button type="button">16:00</button>
-                            <button type="button">17:00</button>
-                            <button type="button">18:00</button>
-                            <button type="button">19:00</button>
-                            <button type="button">20:00</button>
-                            <button type="button">21:00</button>
+                        <div class="timeListWrap">
+                            <div class="timeList">
+                                <button type="button">10:00</button>
+                                <button type="button">11:00</button>
+                                <button type="button">12:00</button>
+                                <button type="button">13:00</button>
+                                <button type="button">14:00</button>
+                                <button type="button">15:00</button>
+                                <button type="button">16:00</button>
+                                <button type="button">17:00</button>
+                                <button type="button">18:00</button>
+                                <button type="button">19:00</button>
+                                <button type="button">20:00</button>
+                                <button type="button">21:00</button>
+                            </div>
                         </div>
                         <div class="btnGroup">
                             <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgGray">戻る</button>

@@ -136,7 +136,7 @@ header{position: relative;min-width: fit-content;background: #FFF;box-shadow: 0p
 #gnb > ul > li > ul > li:last-child{border-radius: 0 0 10px 10px;}
 #gnb > ul > li > ul > li + li{border-top: 1px solid #e6e6e6;}
 #gnb > ul > li > ul > li > a{position: relative;display: block;padding: 0 30px;font-size: 13px;color: #444;font-weight: 400;line-height: 36px;letter-spacing: -0.6px;text-align: center;}
-#gnb > ul > li > ul > li > a:hover{background: #0394B3;color: #fff;font-weight: 500;}
+#gnb > ul > li > ul > li > a:hover, #gnb > ul > li > ul > li > a:focus{background: #0394B3;color: #fff;font-weight: 500;}
 #gnb > ul > li.active > ul{display: block;}
 .btnGnbClose{display: none;position: absolute;top: 20px;right: 16px;width: 40px;height: 40px;border: 1px solid #D4D4D4;background-color: #FFF;background-image: url(../images/icon_close.svg);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 

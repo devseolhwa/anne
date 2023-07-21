@@ -1,4 +1,5 @@
 @import url(datepicker.css);
+@import url(etc.css);
 
 .container{position: relative;padding: 90px 0;box-sizing: border-box;}
 #contents{width: 1280px;margin: 0 auto;}
@@ -78,6 +79,9 @@
 
 .boardOrder{display: flex;justify-content: flex-end;margin: 15px 0 10px;}
 .boardOrder .selectBox {width: 100px;}
+.boardOrder .selectBox .btnSelect{height: 40px;}
+.boardOrder .selectBox .selectList{top: 45px;max-height: 145px;}
+.boardOrder .selectBox .selectList li a{padding: 0 15px;}
 
 /* table */
 .tableData {border-top: 2px solid #000;text-align: center;}
@@ -164,7 +168,7 @@
 .checkList.checkListInline li{display: inline-block;margin: 0;}
 .checkList.checkListInline li + li{margin-left: 15px;}
 .checkList.checkListTwolines{font-size: 0;}
-.checkList.checkListTwolines li{width: 50%;height: 34px;line-height: 34px;margin-top: 20px;}
+.checkList.checkListTwolines li{width: 50%;min-height: 34px;line-height: 34px;margin-top: 15px;}
 .checkList.checkListTwolines li:nth-child(-n+2){margin-top: 0;}
 .checkList.checkListTwolines li + li{margin-left: 0;}
 .checkList.checkListFourlines{font-size: 0;}
@@ -483,7 +487,7 @@
 
 .reviewView{position: relative;margin: 50px 0 75px;padding: 46px 20px 90px;border-top: 2px solid #000;border-bottom: 1px solid #000;box-sizing: border-box;display: flex;align-items: flex-start;flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
 .reviewView .reviewInfo {width: calc(100% - 1020px);}
-.reviewView .reviewInfo .name {font-size: 16px;color: #000;font-weight: 700;line-height: 1;}
+.reviewView .reviewInfo .name {font-size: 16px;color: #000;font-weight: 700;line-height: 1.7;}
 .reviewView .reviewInfo .data {font-size: 14px;color: #777777;font-weight: 400;line-height: 35px;}
 .reviewView .reviewInfo .date {font-size: 16px;color: #777777;font-weight: 400;line-height: 30px;}
 .reviewView .reviewInfo .scoreWrap {margin-top: 25px;font-size: 16px;color: #777777;font-weight: 400;line-height: 20px;}
@@ -529,7 +533,8 @@
 .timeDateLg button img{display: block;}
 .timeDateLg button.next{-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
 .timeDateLg strong{font-size: 30px;color: #333;font-weight: 500;line-height: 22px;}
-.timeList {display: flex;flex-direction: row;flex-wrap: wrap;align-content: space-between;justify-content: flex-start;align-items: stretch;padding: 29px 34px 30px;margin-bottom: 50px;border-top: 1px solid #000;border-bottom: 1px solid #000;box-sizing: border-box;background-image: url(../images/bg_timeList.jpg);background-position: center top;background-repeat: repeat;}
+.timeListWrap{padding: 29px 0 30px;margin-bottom: 50px;border-top: 1px solid #000;border-bottom: 1px solid #000;box-sizing: border-box;}
+.timeList {display: flex;flex-direction: row;flex-wrap: wrap;align-content: space-between;justify-content: flex-start;align-items: stretch;padding: 0 34px;box-sizing: border-box;background-image: url(../images/bg_timeList.jpg);background-position: center 80px;background-repeat: repeat;}
 .timeList button {position: relative;width: 110px;height: 50px;margin-top: 58px;margin-left: 10px;border-radius: 5px;border: 1px solid #D9D9D9;background: #FFF;box-sizing: border-box;font-size: 15px;color: #444;font-weight: 700;}
 .timeList button:nth-child(8n+1){margin-left: 0;}
 .timeList button:nth-child(-n+8){margin-top: 0;}
@@ -763,7 +768,7 @@
     .cartWrap .cartList ul li .text .option{margin-top: 8px;}
     .cartWrap .cartList ul li .img{order: 3;width: 91px;min-height: 100px;}
     .cartWrap .cartList ul li .info{order: 4;width: calc(100% - 100px);text-align: left;}
-    .cartWrap .cartList ul li .itemQuantity{order: 5;position: absolute;bottom: 20px;left: 100px;}
+    .cartWrap .cartList ul li .itemQuantity{order: 5;position: absolute;bottom: 21px;left: 100px;}
     .cartWrap .cartList ul li .button{order: 6;position: absolute;bottom: 20px;right: 0;display: flex;align-items: center;justify-content: space-between;width: 134px;}
     .cartWrap .cartList ul li .button button{width: 65px;margin-top: 0;}
     .cartWrap .cartDel{flex-direction: column;align-items: flex-start;}
@@ -853,7 +858,8 @@
     .timeDateLg button{width: 28px;height: 28px;}
     .timeDateLg button img{width: 18px;height: 18px;}
     .timeDateLg strong{font-size: 20px;}
-    .timeList{margin-bottom: 30px;padding: 20px 0;background-image: url(../images/bg_timeList_m.jpg);background-position: center 10px;}
+    .timeListWrap{margin-bottom: 30px;padding: 20px 0;}
+    .timeList{padding: 0;background-image: url(../images/bg_timeList_m.jpg);background-position: center 54px;}
     .timeList button{width: calc(33.3% - 7px);height: 43px;margin-top: 20px;font-size: 13px;}
     .timeList button:nth-child(-n+8){margin-top: 20px;}
     .timeList button:nth-child(-n+3){margin-top: 0;}
