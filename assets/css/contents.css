@@ -587,6 +587,8 @@
     .infoRadiusBox{padding: 12px 10px;font-size: 11px;line-height: 24px;}
     .infoRadiusBox strong{font-size: 11px;line-height: 20px;}
 
+    .boardOrder .selectBox .selectList{top: 50px;}
+
     /* table */
     .tableData th, .tableData td {height: auto;font-size: 13px;padding: 10px;}
     .tableList{margin-top: 40px;border-width: 1px;font-size: 12px;line-height: 20px;}

@@ -19,5 +19,5 @@
 .ui-datepicker .ui-datepicker-prev-hover{left: 2px;}
 .ui-datepicker .ui-datepicker-next-hover{right: 2px;}
 .ui-datepicker-calendar>tbody>tr>td:first-child a{color: #F43131 !important;}
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {width: 30px;height: 30px;line-height: 30px;border: 0px;background: #f1f1f1;border: 1px solid #DFDFDF;box-sizing: border-box;border-radius: 50%;margin: 0 auto;}
-.ui-datepicker-current-day a{width: 30px;height: 30px;line-height: 30px; background-color: #0394B3 !important;border-radius: 50%;margin: 0 auto;color: #fff !important;font-weight: 700 !important;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {width: 30px;height: 30px;line-height: 28px;border: 0px;background: #f1f1f1;border: 1px solid #DFDFDF;box-sizing: border-box;border-radius: 50%;margin: 0 auto;}
+.ui-datepicker-current-day a{width: 30px;height: 30px;line-height: 28px;background-color: #0394B3 !important;border-radius: 50%;margin: 0 auto;color: #fff !important;font-weight: 700 !important;}

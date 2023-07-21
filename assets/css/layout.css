@@ -256,7 +256,7 @@ footer{min-width: fit-content;overflow: hidden;}
     .ess1{font-size: 12px;line-height: 20px;}
     .inner500, .inner750, .inner900, .inner980, .inner1100{width: 100%;}
     .width135, .width500{width: 100% !important;}
-    .widthMAuto{width: auto !important;}
+    .widthMAuto{width: auto !important;max-width: 200px;}
     .heightM150{height: 150px;}
 
     .formGroup > li + li{margin-top: 20px;}
