@@ -261,7 +261,7 @@ footer{min-width: fit-content;overflow: hidden;}
 
     .formGroup > li + li{margin-top: 20px;}
     .formGroup > li > .half {width: 100%;}
-    .formGroup > li > .half + .half{margin-left: 0;margin-top: 10px;}
+    .formGroup > li > .half + .half{margin-left: 0;margin-top: 20px;}
     .formGroup label, .labelText{margin-bottom: 5px;font-size: 14px;line-height: 1.5;}
     .formGroup input[type="text"], .formGroup select{height: 45px;padding: 0 10px;font-size: 14px;}
     .formGroup textarea{padding: 10px;font-size: 14px;}

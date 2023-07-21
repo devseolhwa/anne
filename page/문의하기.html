@@ -193,87 +193,89 @@
                 </ul><!-- navType03 end -->
 
                 <p class="pointText2 ta_c fb mt50 mb50">お問い合わせはこちらのフォームよりお願いいたします</p>
-                <div class="inner980 lineTopBottom">
-                    <ul class="formGroup">
-                        <li>
-                            <div class="half">
-                                <p class="labelText">お名前<span class="pointText4">*</span></p>
-                                <ul class="half">
-                                    <li><input type="text" id="idUserName" title="姓" placeholder="姓"></li>
-                                    <li><input type="text" id="idUserName2" title="名" placeholder="名"></li>
+                <div class="lineTopBottom">
+                    <div class="inner980 ">
+                        <ul class="formGroup">
+                            <li>
+                                <div class="half">
+                                    <p class="labelText">お名前<span class="pointText4">*</span></p>
+                                    <ul class="half">
+                                        <li><input type="text" id="idUserName" title="姓" placeholder="姓"></li>
+                                        <li><input type="text" id="idUserName2" title="名" placeholder="名"></li>
+                                    </ul>
+                                </div>
+                                <div class="half">
+                                    <p class="labelText">お名前(フリガナ)<span class="pointText4">*</span></p>
+                                    <ul class="half">
+                                        <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ"></li>
+                                        <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="half">
+                                    <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                                    <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし" />
+                                    <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                                </div>
+                                <div class="half">
+                                    <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                                    <input type="text" id="bdMemberID" placeholder="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
+                                    <ul class="checkList checkListInline checkListMTwolines">
+                                        <li>
+                                            <input type="radio" name="bdCategory" id="bdCategory1">
+                                            <label for="bdCategory1">商品について</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="bdCategory" id="bdCategory2">
+                                            <label for="bdCategory2">ご配送について</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="bdCategory" id="bdCategory3">
+                                            <label for="bdCategory3">ご注文について</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="bdCategory" id="bdCategory4">
+                                            <label for="bdCategory4">ご意見、ご要望</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="bdCategory" id="bdCategory5">
+                                            <label for="bdCategory5">その他</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="full">
+                                    <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
+                                    <textarea name="bdContactContent" id="bdContactContent" class="height150"></textarea>
+                                </div>
+                            </li>
+                        </ul><!-- formGroup end -->
+                        <hr class="lineLg">
+                        <div class="privacyCheckWrap">
+                            <p class="labelText mb0">個人情報保護方針に同意<span class="pointText4">*</span></p>
+                            <div class="privacyCheck">
+                                <p class="textMd basicText4"><span class="pointText1 u">個人情報保護方針</span>に同意の上、送信ください</p>
+                                <ul class="checkList">
+                                    <li>
+                                        <input type="checkbox" name="" id="privacyCheck">
+                                        <label for="privacyCheck">同意する</label>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="half">
-                                <p class="labelText">お名前(フリガナ)<span class="pointText4">*</span></p>
-                                <ul class="half">
-                                    <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ"></li>
-                                    <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ"></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="half">
-                                <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
-                                <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし" />
-                                <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
-                            </div>
-                            <div class="half">
-                                <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
-                                <input type="text" id="bdMemberID" placeholder="" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="full">
-                                <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
-                                <ul class="checkList checkListInline checkListMTwolines">
-                                    <li>
-                                        <input type="radio" name="bdCategory" id="bdCategory1">
-                                        <label for="bdCategory1">商品について</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="bdCategory" id="bdCategory2">
-                                        <label for="bdCategory2">ご配送について</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="bdCategory" id="bdCategory3">
-                                        <label for="bdCategory3">ご注文について</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="bdCategory" id="bdCategory4">
-                                        <label for="bdCategory4">ご意見、ご要望</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="bdCategory" id="bdCategory5">
-                                        <label for="bdCategory5">その他</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="full">
-                                <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
-                                <textarea name="bdContactContent" id="bdContactContent" class="height150"></textarea>
-                            </div>
-                        </li>
-                    </ul><!-- formGroup end -->
-                    <hr class="lineLg">
-                    <div class="privacyCheckWrap">
-                        <p class="labelText mb0">個人情報保護方針に同意<span class="pointText4">*</span></p>
-                        <div class="privacyCheck">
-                            <p class="textMd basicText4"><span class="pointText1 u">個人情報保護方針</span>に同意の上、送信ください</p>
-                            <ul class="checkList">
-                                <li>
-                                    <input type="checkbox" name="" id="privacyCheck">
-                                    <label for="privacyCheck">同意する</label>
-                                </li>
-                            </ul>
+                        </div><!-- privacyCheckWrap end -->
+                        <div class="infoRadiusBox">
+                            ※返信は翌営業日以降に順次対応させて頂きます。<br />
+                            ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
                         </div>
-                    </div><!-- privacyCheckWrap end -->
-                    <div class="infoRadiusBox">
-                        ※返信は翌営業日以降に順次対応させて頂きます。<br />
-                        ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
-                    </div>
-                </div><!-- inner980 end -->
+                    </div><!-- inner980 end -->
+                </div><!-- lineTopBottom end -->
                 <div class="btnGroup mt40">
                     <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgGray">閉じる</button>
                     <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">確認する</button>
