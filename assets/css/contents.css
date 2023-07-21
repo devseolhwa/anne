@@ -24,7 +24,7 @@
 
 /* nav */
 .navType01{display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: center;}
-.navType01 a{padding: 7px 20px;background: #fff;border-radius: 30px;border: 1px solid #D9D9D9;box-sizing: border-box;font-size: 18px;color: #333;font-weight: 400;line-height: 30px;letter-spacing: -0.6px;text-align: center;}
+.navType01 a{padding: 6px 20px;background: #fff;border-radius: 30px;border: 1px solid #D9D9D9;box-sizing: border-box;font-size: 18px;color: #333;font-weight: 400;line-height: 30px;letter-spacing: -0.6px;text-align: center;}
 .navType01 a + a{margin-left: 20px;}
 .navType01 a.on{background: #0394B3;border-color: #0394B3;color: #fff;font-weight: 700;}
 .navType02{display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: center;}
@@ -45,7 +45,7 @@
 /* select */
 .selectBox {position: relative;}
 .selectBox + .selectBox {margin-top: 5px;}
-.selectBox .btnSelect{position: relative;width: 100%;height: 33px;padding: 6px 28px 7px 15px;background-color: #fff;background-image: url(../images/select_black.svg);background-size: 12px 6px;background-position: calc(100% - 15px) center;background-repeat: no-repeat;border: 1px solid #D9D9D9;box-sizing: border-box;font-size: 12px;color: #777;font-weight: 400;text-align: left;transition: border-color .3s ease-in-out;}
+.selectBox .btnSelect{position: relative;width: 100%;height: 33px;padding: 6px 28px 7px 15px;background-color: #fff;background-image: url(../images/select_black.svg);background-size: 12px 6px;background-position: calc(100% - 15px) center;background-repeat: no-repeat;border: 1px solid #D9D9D9;box-sizing: border-box;font-size: 12px;color: #777;font-weight: 400;text-align: left;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;transition: border-color .3s ease-in-out;}
 .selectBox .selectList {display: none;overflow-x: hidden;overflow-y: auto;position: absolute;left: 0;top: 35px;width: 100%;max-height: 180px;background: #fff;border: 1px solid #D9D9D9;box-sizing: border-box;z-index: 1;scrollbar-color: #BBB transparent;scrollbar-width: thin;}
 .selectList::-webkit-scrollbar {width: 4px;}/* 스크롤 바 */
 .selectList::-webkit-scrollbar-track {background-color: transparent;}/* 스크롤 바 밑의 배경 */
@@ -361,7 +361,7 @@
 .joinFormGroup{display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;justify-content: center;padding: 10px 88px 40px;box-sizing: border-box;}
 .joinFormGroup > li {display: flex;flex-direction: row;flex-wrap: wrap;width: calc(100% - 240px);margin-top: 30px;}
 .joinFormGroup > li.labelTitle {width: 240px;margin-top: 35px;}
-.joinFormGroup > li.labelTitle label, .joinFormGroup > li.labelTitle .labelText{margin-bottom: 0;}
+.joinFormGroup > li.labelTitle label, .joinFormGroup > li.labelTitle .labelText{margin-bottom: 0;line-height: 35px;}
 .joinFormGroup > li > div {display: flex;flex-direction: column;}
 .joinFormGroup > li > .half {width: calc(50% - 5px);}
 .joinFormGroup > li > .half + .half {margin-left: 10px;}
@@ -570,7 +570,7 @@
     .navType04 a + a{margin-left: 10px;}
 
     .selectBox.type1 {width: 150px;}
-    .selectBox.type2 .btnSelect{height: 45px;padding: 0 10px;font-size: 14px;}
+    .selectBox.type2 .btnSelect{height: 45px;padding: 0 28px 0 10px;font-size: 14px;}
     .selectBox.type2 .selectList li a{font-size: 13px;}
 
     .iconPapercheckLg{margin-bottom: 25px;}
