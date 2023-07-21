@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anne</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+    
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">本文に移動</a><!-- 본문바로가기 -->
+        <a href="#">メニューに移動</a><!-- 메뉴바로가기 -->
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="topMenu">
+                <div class="topMenuInner">
+                    <a href="#">ログイン</a>
+                    <a href="#">新規会員登録</a>
+                    <a href="#">予約確認</a>
+                    <a href="#" class="selected">アクセス</a>
+                    <a href="#">配送案内</a>
+                </div>
+            </div>
+            <div class="headerWrap">
+                <div class="headerInner">
+                    <h1 class="logo"><a href="#"><img src="../assets/images/logo.svg" alt="Anneアン"></a></h1>
+                    <div class="searchWrap">
+                        <form>
+                            <input type="text" title="商品検索" placeholder="商品検索" />
+                            <button type="button">検索</button>
+                        </form>
+                    </div>
+                    <div class="headerInfo">
+                        <ul class="userInfo">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_cart.svg" alt="">
+                                    <span class="pointText1">10</span>点&nbsp;&nbsp;/&nbsp;&nbsp;<span class="pointText1">35,000</span>円
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_star.svg" alt="">
+                                    お気に入り
+                                </a>
+                            </li>
+                            <li><a href="#" class="btnGreen">業者専用 予約はこちら</a></li>
+                        </ul>
+                        <ul class="inquiryInfo">
+                            <li><a href="#"><img src="../assets/images/icon_ask.svg" alt="">よくある質問</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_inquiry.svg" alt="">お問い合わせ</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_direction.svg" alt="">来店試着予約</a></li>
+                        </ul>
+                    </div>
+                    <div class="mheaderBtnGroup">
+                        <button type="button" class="btnSearch"><img src="../assets/images/icon_search_black.svg" alt=""></button><!-- 검색 -->
+                        <button type="button" class="btnCart"><img src="../assets/images/icon_cart_m.svg" alt=""></button><!-- 장바구니 -->
+                        <button type="button" class="btnGuide"><img src="../assets/images/icon_guide_m.svg" alt=""></button><!-- 이용가이드 -->
+                        <button type="button" class="btnDirection"><img src="../assets/images/icon_direction_m.svg" alt=""></button><!-- 위치 -->
+                    </div>
+                </div>
+            </div><!-- headerWrap end -->
+            <div class="mNav">
+                <a href="#">かりゆしレンタル</a>
+                <a href="#">その他レンタル</a>
+                <a href="#">配送案内</a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">ご利用ガイド</a>
+                        <ul>
+                            <li><a href="#">ご予約の流れ</a></li>
+                            <li><a href="#">受取 ・ 返却</a></li>
+                            <li><a href="#">変更 ・ キャンセル</a></li>
+                            <li><a href="#">お支払い</a></li>
+                            <li><a href="#">破損 ・ 紛失</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">かりゆしレンタル</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">その他レンタル</a>
+                        <ul>
+                            <li><a href="#">パンツ</a></li>
+                            <li><a href="#">スカート</a></li>
+                            <li><a href="#">ストール</a></li>
+                            <li><a href="#">カバン</a></li>
+                            <li><a href="#">靴</a></li>
+                            <li><a href="#">アクセサリー</a></li>
+                            <li><a href="#">花冠・ブーケ</a></li>
+                            <li><a href="#">お子様王冠・蝶ネクタイ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">配送案内</a>
+                        <ul>
+                            <li><a href="#">沖縄本島</a></li>
+                            <li><a href="#">宮古島 · 石垣島</a></li>
+                            <li><a href="#">竹富島</a></li>
+                            <li><a href="#">沖縄県外</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">スペシャル衣装レンタル</a>
+                        <ul>
+                            <li><a href="#">ドレス ・スーツ</a></li>
+                            <li><a href="#">琉装</a></li>
+                            <li><a href="#">韓服〔チマ、チョゴリ）</a></li>
+                            <li><a href="#">韓国学生制服</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">オリジナルAnne商品購入</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">インフォメーション</a>
+                        <ul>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">業者専用予約</a></li>
+                            <li><a href="#">業者専用お問い合わせ</a></li>
+                            <li><a href="#">イベント</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">その他</a>
+                        <ul>
+                            <li><a href="#">会社案内</a></li>
+                            <li><a href="#">採用情報</a></li>
+                            <li><a href="#">ログイン</a></li>
+                            <li><a href="#">新規会員登録</a></li>
+                            <li><a href="#">予約確認</a></li>
+                            <li><a href="#">来店試着予約</a></li>
+                            <li><a href="#">お気に入り</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">特定商取引法に基づく表示</a></li>
+                            <li><a href="#">個人情報取扱方針</a></li>
+                            <li><a href="#">汚損/破損に関する同意書</a></li>
+                            <li><a href="#">変更/キャンセル/返金規定</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btnGnbClose">メニューを閉じる</button><!-- 메뉴닫기 -->
+            </nav>
+        </header>
+
+        <div class="mfixmenu">
+            <button type="button" class="btnGnbOpen"><img src="../assets/images/icon_gnb_open.svg" alt=""></button><!-- 메뉴열기 -->
+            <button type="button" class="btnLoginMypage"><img src="../assets/images/icon_mypage.svg" alt=""></button><!-- 로그인&마이페이지 -->
+            <button type="button" class="btnReservationCheck"><img src="../assets/images/icon_reservation_check.svg" alt=""></button><!-- 예약확인 -->
+            <button type="button" class="btnGreen">業者専用予約</button><!-- 업자전용예약팝업 -->
+        </div>
+
+        <div class="container">
+            <div id="contents">
+
+                <h3 class="titleLg">マイページ</h3>
+                <hr class="lineSm">
+
+                <ul class="navType03">
+                    <li class="on"><a href="#">予約確認</a></li>
+                    <li><a href="#">カート</a></li>
+                    <li><a href="#">商品レビュー</a></li>
+                    <li><a href="#">会員情報変更</a></li>
+                    <li><a href="#">来店試着予約確認</a></li>
+                </ul><!-- navType03 end -->
+
+                <p class="titleline"><span class="pointText4">*</span> 予約情報</p>
+
+                <!-- pc -->
+                <div class="mobileHide">
+                    <table class="tableData">
+                        <caption>予約情報(予約番号, 予約日時, 予約者名, 予約期間, 予約者連絡先, 予約者Eメール)</caption>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">予約番号</th>
+                                <td class="ta_l">KR2206281107_CUM</td>
+                                <th scope="col">予約日時</th>
+                                <td class="ta_l">2023-06-28 11:07:31</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">予約者名</th>
+                                <td class="ta_l">koo eonjung(グ オンジョン)</td>
+                                <th scope="col">予約期間</th>
+                                <td class="ta_l">2023-06-28~2023-06-30</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">予約者連絡先</th>
+                                <td class="ta_l">080-6496-5874</td>
+                                <th scope="col">予約者Eメール</th>
+                                <td class="ta_l">mari992@naver.com</td>
+                            </tr>
+                        </tbody>
+                    </table><!-- tableData end -->
+                </div>
+                <!-- mobile -->
+                <div class="mobileShow">
+                    <table class="tableData">
+                        <caption>予約情報(予約番号, 予約日時, 予約者名, 予約期間, 予約者連絡先, 予約者Eメール)</caption>
+                        <colgroup>
+                            <col style="width: 30%;">
+                            <col style="width: 70%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col" class="ta_l">予約番号</th>
+                                <td class="ta_l">KR2206281107_CUM</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="ta_l">予約者名</th>
+                                <td class="ta_l">koo eonjung(グ オンジョン)</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="ta_l">予約者連絡先</th>
+                                <td class="ta_l">080-6496-5874</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="ta_l">予約日時</th>
+                                <td class="ta_l">2023-06-28 11:07:31</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="ta_l">予約期間</th>
+                                <td class="ta_l">2023-06-28~2023-06-30</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="ta_l">予約者Eメール</th>
+                                <td class="ta_l">mari992@naver.com</td>
+                            </tr>
+                        </tbody>
+                    </table><!-- tableData end -->
+                </div>
+
+                <p class="titleline"><span class="pointText4">*</span> 商品情報</p>
+                <div class="cartWrap mt0">
+                    <div class="cartList">
+                        <ul>
+                            <li>
+                                <div class="checkBox">
+                                    <label for="products01"><input type="checkbox" id="products01"><i></i>
+                                    </label>
+                                </div>
+                                <div class="img"><img src="../assets/images/ex_product_banner03.jpg" alt=""></div>
+                                <div class="text">
+                                    <p class="title">ウォーターカラーリーフ[ノースリーブ]</p>
+                                    <p class="option">
+                                        カラー : BLUE / サイズ : L~2L<br />
+                                        受取日時 : 2023.05.05 09:00~12:00 / 返却日時 : 2023.05.07 12:00~18:00
+                                    </p>
+                                </div>
+                                <div class="itemQuantity">
+                                    <button type="button" class="down" disabled="">-</button>
+                                    <input type="text" class="quantity" value="1" readonly="">
+                                    <button type="button" class="up">+</button>
+                                </div>
+                                <div class="info">
+                                    <p class="day">2泊3日</p>
+                                    <p class="price">3,500 円</p>
+                                    <p>(クリーニング代、消費税込み)</p>
+                                </div>
+                                <div class="button">
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgPink">変更</button>
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgDarkGray">削除</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkBox">
+                                    <label for="products02"><input type="checkbox" id="products02"><i></i>
+                                    </label>
+                                </div>
+                                <div class="img"><img src="../assets/images/ex_product_banner01.jpg" alt=""></div>
+                                <div class="text">
+                                    <p class="title">インナードレスWhite</p>
+                                    <p class="option">
+                                        カラー : BLUE / サイズ : L~2L<br />
+                                        受取日時 : 2023.05.05 09:00~12:00 / 返却日時 : 2023.05.07 12:00~18:00
+                                    </p>
+                                </div>
+                                <div class="itemQuantity">
+                                    <button type="button" class="down">-</button>
+                                    <input type="text" class="quantity" value="2" readonly="">
+                                    <button type="button" class="up">+</button>
+                                </div>
+                                <div class="info">
+                                    <p class="day">2泊3日</p>
+                                    <p class="price">4,000 円</p>
+                                    <p>(クリーニング代、消費税込み)</p>
+                                </div>
+                                <div class="button">
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgPink">変更</button>
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgDarkGray">削除</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkBox">
+                                    <label for="products03"><input type="checkbox" id="products03"><i></i>
+                                    </label>
+                                </div>
+                                <div class="img"><img src="../assets/images/ex_product_banner04.jpg" alt=""></div>
+                                <div class="text">
+                                    <p class="title">ウォーターカラーリーフ[ノースリーブ]</p>
+                                    <p class="option">
+                                        カラー : BLUE / サイズ : L~2L<br />
+                                        受取日時 : 2023.05.05 09:00~12:00 / 返却日時 : 2023.05.07 12:00~18:00
+                                    </p>
+                                </div>
+                                <div class="itemQuantity">
+                                    <button type="button" class="down">-</button>
+                                    <input type="text" class="quantity" value="2" readonly="">
+                                    <button type="button" class="up">+</button>
+                                </div>
+                                <div class="info">
+                                    <p class="day">2泊3日</p>
+                                    <p class="price">1,500 円</p>
+                                    <p>(クリーニング代、消費税込み)</p>
+                                </div>
+                                <div class="button">
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgPink">変更</button>
+                                    <button type="button" class="btn btnXs btnRadiusMd btnFull btnBgDarkGray">削除</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="cartDel">
+                            <ul class="checkList">
+                                <li>
+                                    <input type="checkbox" id="joinService">
+                                    <label for="joinService">全体選択 (<span class="pointText1">2</span>/3)</label>
+                                </li>
+                                <li>
+                                    <button type="button">選択削除</button>
+                                </li>
+                            </ul>
+                            <div class="discountWrap">
+                                <input type="text" title="割引クーポン入力" placeholder="割引クーポン入力">
+                                <button type="button">適用</button>
+                            </div>
+                        </div><!-- cartDel end -->
+                    </div><!-- cartList end -->
+                    <div class="cartTotal">
+                        <div class="amountWrap">
+                            <div class="amountList">
+                                <p>
+                                    <span>利用金額</span>
+                                    <span>8,500 円</span>
+                                </p>
+                                <p>
+                                    <span>割引金額</span>
+                                    <span>0 円</span>
+                                </p>
+                                <p>
+                                    <span>送料</span>
+                                    <span>0 円</span>
+                                </p>
+                            </div>
+                            <div class="amountTotal">
+                                <span>決済金額</span>
+                                <span>8,500 円</span>
+                                <p>(クリーニング代、消費税込み)</p>
+                            </div>
+                        </div><!-- amountWrap end -->
+                        <div class="btnGroup mt20">
+                            <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">ご予約手続きへ</button>
+                            <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgGray">他の商品を見る</button>
+                        </div>
+                        <div class="cartInfo">
+                            カート内の商品はサイト上に7日間保存されます。<br /><br />
+                            ※在庫の確保ではございませんので、レンタルが終了したり、他の方のご予約が先に完了すれば自動的にカートから削除されることご了承くださいませ。
+                        </div>
+                    </div><!-- cartTotal end -->
+                </div><!-- cartWrap end -->
+
+                <div class="btnGroup mt50">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnBgGray">予約完了</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnBgBlue">リスト</button>
+                </div>
+
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <div class="footerSliderWrap">
+                <div class="footerSliderInner">
+                    <div class="footerSlider">
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div><!-- footerSliderWrap end -->
+            <div class="footerLink">
+                <div class="footerLinkInner">
+                    <ul class="left">
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">個人情報取扱方針</a></li>
+                        <li><a href="#">特定商取引法に基づく表示</a></li>
+                        <li class="mobileHide"><a href="#" class="pointText5">業者専用お問い合わせ</a></li>
+                        <li class="mobileShowInline"><a href="#" class="pointText3">汚損/破損に関する同意書</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="#">会社案内</a>
+                        <a href="#">採用情報</a>
+                        <a href="#">サイトマップ</a>
+                    </div>
+                </div>
+            </div><!-- footerLinkWrap end -->
+            <div class="footerInfo">
+                <div class="footerInfoInner">
+                    <div class="footerCall">
+                        Anne お問い合わせ(年中無休)
+                        <strong>098-851-4326</strong>
+                    </div>
+                    <p>〒901-0221 沖縄県豊見城市座安 208-2 SOUTH ZA I 1階</p>
+                    <p>Email : anne@odal.co.kr</p>
+                    <p class="pointText1">電話受付 09:00~17:00 I かりゆし受け取り 09:00~18:00</p>
+                    <p>尚、お受取り当日に限り航空機遅延などは別対応致します</p>
+                    <p>かりゆしロッカー返却 (24時間対応)</p>
+                    <p>GoogleMapで <span class="pointText1">“Anneアン”</span> 検索 カーナビのマップコード 133.238.24.187</p>
+                    <div class="footerSns">
+                        <a href="#"><img src="../assets/images/icon_instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div><!-- footerInfo end -->
+            <div class="copyright">Copyright(C) Odal. All Rights Reserved.</div>
+        </footer>
+    </div><!-- wrap end -->
+
+</body>
+</html>

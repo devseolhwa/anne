@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anne</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"><!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+    
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!-- datepicker -->
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">本文に移動</a><!-- 본문바로가기 -->
+        <a href="#">メニューに移動</a><!-- 메뉴바로가기 -->
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="topMenu">
+                <div class="topMenuInner">
+                    <a href="#">ログイン</a>
+                    <a href="#">新規会員登録</a>
+                    <a href="#">予約確認</a>
+                    <a href="#" class="selected">アクセス</a>
+                    <a href="#">配送案内</a>
+                </div>
+            </div>
+            <div class="headerWrap">
+                <div class="headerInner">
+                    <h1 class="logo"><a href="#"><img src="../assets/images/logo.svg" alt="Anneアン"></a></h1>
+                    <div class="searchWrap">
+                        <form>
+                            <input type="text" title="商品検索" placeholder="商品検索" />
+                            <button type="button">検索</button>
+                        </form>
+                    </div>
+                    <div class="headerInfo">
+                        <ul class="userInfo">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_cart.svg" alt="">
+                                    <span class="pointText1">10</span>点&nbsp;&nbsp;/&nbsp;&nbsp;<span class="pointText1">35,000</span>円
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_star.svg" alt="">
+                                    お気に入り
+                                </a>
+                            </li>
+                            <li><a href="#" class="btnGreen">業者専用 予約はこちら</a></li>
+                        </ul>
+                        <ul class="inquiryInfo">
+                            <li><a href="#"><img src="../assets/images/icon_ask.svg" alt="">よくある質問</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_inquiry.svg" alt="">お問い合わせ</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_direction.svg" alt="">来店試着予約</a></li>
+                        </ul>
+                    </div>
+                    <div class="mheaderBtnGroup">
+                        <button type="button" class="btnSearch"><img src="../assets/images/icon_search_black.svg" alt=""></button><!-- 검색 -->
+                        <button type="button" class="btnCart"><img src="../assets/images/icon_cart_m.svg" alt=""></button><!-- 장바구니 -->
+                        <button type="button" class="btnGuide"><img src="../assets/images/icon_guide_m.svg" alt=""></button><!-- 이용가이드 -->
+                        <button type="button" class="btnDirection"><img src="../assets/images/icon_direction_m.svg" alt=""></button><!-- 위치 -->
+                    </div>
+                </div>
+            </div><!-- headerWrap end -->
+            <div class="mNav">
+                <a href="#">かりゆしレンタル</a>
+                <a href="#">その他レンタル</a>
+                <a href="#">配送案内</a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">ご利用ガイド</a>
+                        <ul>
+                            <li><a href="#">ご予約の流れ</a></li>
+                            <li><a href="#">受取 ・ 返却</a></li>
+                            <li><a href="#">変更 ・ キャンセル</a></li>
+                            <li><a href="#">お支払い</a></li>
+                            <li><a href="#">破損 ・ 紛失</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">かりゆしレンタル</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">その他レンタル</a>
+                        <ul>
+                            <li><a href="#">パンツ</a></li>
+                            <li><a href="#">スカート</a></li>
+                            <li><a href="#">ストール</a></li>
+                            <li><a href="#">カバン</a></li>
+                            <li><a href="#">靴</a></li>
+                            <li><a href="#">アクセサリー</a></li>
+                            <li><a href="#">花冠・ブーケ</a></li>
+                            <li><a href="#">お子様王冠・蝶ネクタイ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">配送案内</a>
+                        <ul>
+                            <li><a href="#">沖縄本島</a></li>
+                            <li><a href="#">宮古島 · 石垣島</a></li>
+                            <li><a href="#">竹富島</a></li>
+                            <li><a href="#">沖縄県外</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">スペシャル衣装レンタル</a>
+                        <ul>
+                            <li><a href="#">ドレス ・スーツ</a></li>
+                            <li><a href="#">琉装</a></li>
+                            <li><a href="#">韓服〔チマ、チョゴリ）</a></li>
+                            <li><a href="#">韓国学生制服</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">オリジナルAnne商品購入</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">インフォメーション</a>
+                        <ul>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">業者専用予約</a></li>
+                            <li><a href="#">業者専用お問い合わせ</a></li>
+                            <li><a href="#">イベント</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">その他</a>
+                        <ul>
+                            <li><a href="#">会社案内</a></li>
+                            <li><a href="#">採用情報</a></li>
+                            <li><a href="#">ログイン</a></li>
+                            <li><a href="#">新規会員登録</a></li>
+                            <li><a href="#">予約確認</a></li>
+                            <li><a href="#">来店試着予約</a></li>
+                            <li><a href="#">お気に入り</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">特定商取引法に基づく表示</a></li>
+                            <li><a href="#">個人情報取扱方針</a></li>
+                            <li><a href="#">汚損/破損に関する同意書</a></li>
+                            <li><a href="#">変更/キャンセル/返金規定</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btnGnbClose">メニューを閉じる</button><!-- 메뉴닫기 -->
+            </nav>
+        </header>
+
+        <div class="mfixmenu">
+            <button type="button" class="btnGnbOpen"><img src="../assets/images/icon_gnb_open.svg" alt=""></button><!-- 메뉴열기 -->
+            <button type="button" class="btnLoginMypage"><img src="../assets/images/icon_mypage.svg" alt=""></button><!-- 로그인&마이페이지 -->
+            <button type="button" class="btnReservationCheck"><img src="../assets/images/icon_reservation_check.svg" alt=""></button><!-- 예약확인 -->
+            <button type="button" class="btnGreen">業者専用予約</button><!-- 업자전용예약팝업 -->
+        </div>
+
+        <div class="container">
+            <div id="contents">
+
+                <div style="display: flex;flex-direction: column;">
+                    <div class="mb10">
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupCheckReservation');">예약확인로그인</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupReview');">리뷰작성하기</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupLogin');">로그인</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupFindidfw');">아이디 비밀번호 찾기</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupjoinCheck');">회원가입 동의체크</button>
+                    </div>
+                    <div class="mb10">
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupInquiry1');">문의하기-1</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupInquiry2');">문의하기-2</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupBusinessReservation');">업자전용 예약페이지</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupBusinessInquiry1');">업자전용 문의하기-1</button>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupBusinessInquiry2');">업자전용 문의하기-2</button>
+                    </div>
+                    <div class="mb10">
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupCart');">장바구니 변경</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btnMd btnRadiusSm btnBgBlue" onclick="popupOpen('#popupFittingLogin');">방문시착 예약확인</button>
+                    </div>
+                </div>
+                
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <div class="footerSliderWrap">
+                <div class="footerSliderInner">
+                    <div class="footerSlider">
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div><!-- footerSliderWrap end -->
+            <div class="footerLink">
+                <div class="footerLinkInner">
+                    <ul class="left">
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">個人情報取扱方針</a></li>
+                        <li><a href="#">特定商取引法に基づく表示</a></li>
+                        <li class="mobileHide"><a href="#" class="pointText5">業者専用お問い合わせ</a></li>
+                        <li class="mobileShowInline"><a href="#" class="pointText3">汚損/破損に関する同意書</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="#">会社案内</a>
+                        <a href="#">採用情報</a>
+                        <a href="#">サイトマップ</a>
+                    </div>
+                </div>
+            </div><!-- footerLinkWrap end -->
+            <div class="footerInfo">
+                <div class="footerInfoInner">
+                    <div class="footerCall">
+                        Anne お問い合わせ(年中無休)
+                        <strong>098-851-4326</strong>
+                    </div>
+                    <p>〒901-0221 沖縄県豊見城市座安 208-2 SOUTH ZA I 1階</p>
+                    <p>Email : anne@odal.co.kr</p>
+                    <p class="pointText1">電話受付 09:00~17:00 I かりゆし受け取り 09:00~18:00</p>
+                    <p>尚、お受取り当日に限り航空機遅延などは別対応致します</p>
+                    <p>かりゆしロッカー返却 (24時間対応)</p>
+                    <p>GoogleMapで <span class="pointText1">“Anneアン”</span> 検索 カーナビのマップコード 133.238.24.187</p>
+                    <div class="footerSns">
+                        <a href="#"><img src="../assets/images/icon_instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div><!-- footerInfo end -->
+            <div class="copyright">Copyright(C) Odal. All Rights Reserved.</div>
+        </footer>
+    </div><!-- wrap end -->
+
+    <!-- 예약확인로그인 start -->
+    <div class="popupWrap md" id="popupCheckReservation">
+        <div class="popupCenter">
+            <div class="popupInner radius10">
+                <div class="inner500">
+                    
+                    <div class="loginGroup">
+                        <div class="logo"><img src="../assets/images/logo.svg" alt="" /></div>
+                        <h4 class="popupTitle">予約確認</h4>
+                        <strong class="popupText">IDとパスワードを入力してください</strong>
+                        <ul class="formGroup">
+                            <li>
+                                <div class="full">
+                                    <input type="text" id="bdMemberID" title="ID" placeholder="ID(メールアドレス)を入力してください">
+                                </div>
+                                <div class="full">
+                                    <input type="text" id="bdMemberPW" title="パスワード" placeholder="パスワードを入力してください">
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">ログイン</button>
+                        <hr class="lineDash" />
+                        <h4 class="popupTitle">非会員の予約確認</h4>
+                        <strong class="popupText">予約番号と予約時に登録したパスワードを入力してください</strong>
+                        <ul class="formGroup">
+                            <li>
+                                <div class="full">
+                                    <input type="text" id="bdNonMemberNumber" title="予約番号" placeholder="予約番号を入力してください">
+                                </div>
+                                <div class="full">
+                                    <input type="text" id="bdNonMemberPW" title="パスワード" placeholder="パスワードを入力してください">
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">確認</button>
+                    </div><!-- loginGroup end -->
+                </div><!-- inner500 end -->
+                <button type="button" class="btnPopupClose" onclick="popupClose('#popupCheckReservation');">閉じる</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 예약확인로그인 end -->
+
+    <!-- 리뷰작성하기 start -->
+    <div class="popupWrap lg" id="popupReview">
+        <div class="popupCenter">
+            <div class="popupInner">
+                
+                <div class="reviewGroup">
+                    <div class="infoRadiusBox">
+                       <strong>※ 注意事項 【レビュー記入時のご注意】</strong>
+                        他人の権利、利益、名誉などを損ねたり、法令に違反する内容を投稿することはできませんのでご注意ください。<br />
+                        レビュー内容が不適切と判断した場合は、予告なく投稿を削除する場合がございます。
+                    </div>
+                    <ul class="formGroup">
+                        <li>
+                            <div class="half">
+                                <label for="bdNickname">ニックネーム<span class="pointText4">(必須)</span></label>
+                                <input type="text" id="bdNickname" />
+                                <p class="ess1">全角25文字まで</p>
+                            </div>
+                            <div class="half">
+                                <label for="bdScore">おすすめ度<span class="pointText4">(必須)</span></label>
+                                <div class="selectBox type2">
+                                    <button type="button" class="btnSelect" title="" data-code="">1</button>
+                                    <ul class="selectList">
+                                        <li><a href="#" data-code="">1</a></li>
+                                        <li><a href="#" data-code="">2</a></li>
+                                        <li><a href="#" data-code="">3</a></li>
+                                        <li><a href="#" data-code="">4</a></li>
+                                        <li><a href="#" data-code="">5</a></li>
+                                    </ul>
+                                </div>
+                                <p class="ess1">1~5段階評価</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="half">
+                                <label for="bdReviewContent">レビュー本文<span class="pointText4">(必須)</span></label>
+                                <textarea name="bdReviewContent" id="bdReviewContent" class="height200 heightM150"></textarea>
+                                <p class="ess1">全角20~1000文字まで</p>
+                            </div>
+                            <div class="half">
+                                <p class="labelText">プロフィール公開</p>
+                                <p class="ess1">チェックを入れると、都道府県、年齢層、性別が表示されます。</p>
+                                <ul class="dashList">
+                                    <li>
+                                        <div class="checkList">
+                                            <input type="checkbox" name="" id="infoCheck01">
+                                            <label for="infoCheck01" class="mb0">都道府県を公開する</label>
+                                        </div>
+                                        <div class="selectBox type1">
+                                            <button type="button" class="btnSelect" title="" data-code="">んたく</button>
+                                            <ul class="selectList">
+                                                <li><a href="#" data-code="">んたく</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkList">
+                                            <input type="checkbox" name="" id="infoCheck02">
+                                            <label for="infoCheck02" class="mb0">年齢層を公開する</label>
+                                        </div>
+                                        <div class="selectBox type1">
+                                            <button type="button" class="btnSelect" title="" data-code="">んたく</button>
+                                            <ul class="selectList">
+                                                <li><a href="#" data-code="">んたく</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkList">
+                                            <input type="checkbox" name="" id="infoCheck03">
+                                            <label for="infoCheck03" class="mb0">性別を公開する</label>
+                                        </div>
+                                        <ul class="checkList checkListInline">
+                                            <li>
+                                                <input type="radio" name="gender" id="gender01">
+                                                <label for="gender01">指定なし</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="gender" id="gender02">
+                                                <label for="gender02">男性</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="gender" id="gender03">
+                                                <label for="gender03">女性</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="full">
+                                <label for="bdFirstDate">投稿日</label>
+                                <input type="text" class="datepicker" value="" placeholder="" />
+                            </div>
+                        </li>
+                    </ul><!-- formGroup end -->
+                    
+                    <div class="btnGroup">
+                        <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupReview');">閉じる</button>
+                        <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">投稿する</button>
+                    </div>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 리뷰작성하기 end -->
+
+    <!-- 로그인 start -->
+    <div class="popupWrap md" id="popupLogin">
+        <div class="popupCenter">
+            <div class="popupInner radius10">
+                <div class="inner500">
+                    
+                    <div class="loginGroup">
+                        <div class="logo"><img src="../assets/images/logo.svg" alt="" /></div>
+                        <h4 class="popupTitle">ログイン</h4>
+                        <ul class="formGroup">
+                            <li>
+                                <div class="full">
+                                    <input type="text" id="bdMemberID" title="ID" placeholder="ID(メールアドレス)を入力してください">
+                                </div>
+                                <div class="full">
+                                    <input type="text" id="bdMemberPW" title="パスワード" placeholder="パスワードを入力してください">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="findGroup">
+                            <li><button type="button">会員IDを探す</button></li>
+                            <li><button type="button">パスワードを探す</button></li>
+                        </ul>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">ログイン</button>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgGray">新規会員登録</button>
+                    </div><!-- loginGroup end -->
+                </div><!-- inner500 end -->
+                <button type="button" class="btnPopupClose" onclick="popupClose('#popupLogin');">閉じる</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 로그인 end -->
+
+    <!-- 아이디 비밀번호 찾기 start -->
+    <div class="popupWrap md" id="popupFindidfw">
+        <div class="popupCenter">
+            <div class="popupInner radius10">
+                <div class="inner500">
+                    <div class="loginGroup">
+                        <div class="logo"><img src="../assets/images/logo.svg" alt="" /></div>
+                        <div class="popupTabNav">
+                            <ul>
+                                <li class="on"><a href="#popupTabDetails1">会員IDを探す</a></li>
+                                <li><a href="#popupTabDetails2">パスワードを探す</a></li>
+                            </ul>
+                        </div><!-- popupTabNav end -->
+                        <div class="popupTabDetails" id="popupTabDetails1" style="display: block;">
+                            <h4 class="popupTitle">会員IDとパスワードを探す</h4>
+                            <ul class="formGroup">
+                                <li>
+                                    <div class="full"><p class="labelText">会員IDを探す</p></div>
+                                    <div class="half">
+                                        <input type="text" id="idUserName" title="姓" placeholder="姓">
+                                    </div>
+                                    <div class="half">
+                                        <input type="text" id="idUserName2" title="名" placeholder="名">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">確認</button>
+                        </div>
+                        <div class="popupTabDetails" id="popupTabDetails2">
+                            <h4 class="popupTitle">会員IDとパスワードを探す</h4>
+                            <ul class="formGroup">
+                                <li>
+                                    <div class="full">
+                                        <label for="bdMail">パスワードを探す</label>
+                                        <input type="text" id="bdMail" placeholder="メールアドレスを入力してください" />
+                                    </div>
+                                </li>
+                                <li class="mt10">
+                                    <div class="half">
+                                        <input type="text" id="idUserName" title="姓" placeholder="姓">
+                                    </div>
+                                    <div class="half">
+                                        <input type="text" id="idUserName2" title="名" placeholder="名">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">確認</button>
+                        </div>
+                    </div><!-- loginGroup end -->
+                </div><!-- inner500 end -->
+                <button type="button" class="btnPopupClose" onclick="popupClose('#popupFindidfw');">閉じる</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 아이디 비밀번호 찾기 end -->
+
+    <!-- 회원가입 동의체크 start -->
+    <div class="popupWrap lg" id="popupjoinCheck">
+        <div class="popupCenter">
+            <div class="popupInner radius10">
+                <h4 class="popupTitle">個人情報取扱方針</h4>
+                <div class="joinContent">
+                    <div class="joinContentScroll">
+                        <!-- 약관내용 -->
+                        「ANNE」(運営会社:株式会社ODAL 以下、「弊社」)では、お客様の個人情報を重要視し 、個人情報の取り扱い方針を通じて、お客様が提供する個人情報がどのような用途と方式で利用されており、個人情報保護のためにどのような措置が取られているかどうかお知らせします。<br />
+                        弊社は個人情報保護方針を改定する場合、ウェブサイトのお知らせ（または個別通知）を介して公示します。<br /><br />
+
+                        <b>[収集する個人情報の項目]</b><br />
+                        当社は、会員登録、相談、サービス申請などのために下記のように個人情報を収集しています。<br />
+                        ●収集項目:名前、生年月日、性別、ログインID、パスワード、秘密の質問と回答、自宅電話番号、自宅住所、携帯電話番号、電子メール、会社の電話番号、結婚するかどうか、記念日、法定代理人情報、社会保障番号、銀行口座情報、サービス利用記録、接続ログ、接続IP情報、決済記録<br />
+                        ●個人情報の収集方法：ホームページ、書面、電話/ファックスを通じた会員登録、また、予約問い合わせにおける情報入力<br /><br />
+
+                        <b>[個人情報の収集及び利用目的]</b><br />
+                        会社は収集した個人情報を、以下の目的のために利用します。<br />
+                        ●サービス提供に関する契約履行及びサービス提供による料金の支払い<br />
+                        商品及び店舗の情報のご案内,コンテンツ提供、購買、料金決済<br />
+                        ●会員管理<br />
+                        会員制サービス利用による本人確認、個人識別、不良会員の不正利用防止と不正使用防止、加入意思の確認、年齢確認、満14歳未満の児童の個人情報を収集する際、法定代理人に同意するかどうかを確認し、クレーム処理などの苦情処理、告知事項伝達<br />
+                        ●マーケティングと広告に活用<br />
+                        新規サービス（製品）の開発と特化、イベントなど広告性情報伝達、人口統計学的特性に応じたサービスの提供と広告掲載、接続頻度の把握または会員のサービス利用に関する統計<br /><br />
+
+                        <b>[個人情報の収集及び利用目的]</b><br />
+                        当社は皆さまからご提供い
+                    </div><!-- joinContentScroll end -->
+                </div><!-- joinContent end -->
+                <div class="btnGroup">
+                    <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue width500" onclick="popupClose('#popupjoinCheck');">確認</button>
+                </div>
+                <button type="button" class="btnPopupClose" onclick="popupClose('#popupjoinCheck');">閉じる</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 회원가입 동의체크 end -->
+
+    <!-- 문의하기-1 start -->
+    <div class="popupWrap lg" id="popupInquiry1">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">お問い合わせ</h4>
+                <p class="ess1 pointText4 ta_r fb">* 必須</p>
+                <p class="pointText2 ta_c fb mt20">お問い合わせはこちらのフォームよりお願いいたします</p>
+                <ul class="formGroup mt30">
+                    <li>
+                        <div class="half">
+                            <p class="labelText">お名前<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="idUserName" title="姓" placeholder="姓"></li>
+                                <li><input type="text" id="idUserName2" title="名" placeholder="名"></li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">お名前(フリガナ)<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ"></li>
+                                <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                            <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし" />
+                            <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                        </div>
+                        <div class="half">
+                            <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                            <input type="text" id="bdMemberID" placeholder="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
+                            <ul class="checkList checkListInline checkListMTwolines">
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory1">
+                                    <label for="bdCategory1">商品について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory2">
+                                    <label for="bdCategory2">配送について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory3">
+                                    <label for="bdCategory3">注文について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory4">
+                                    <label for="bdCategory4">決済について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory5">
+                                    <label for="bdCategory5">ご意見、ご要望</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory6">
+                                    <label for="bdCategory6">その他</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
+                            <textarea name="bdContactContent" id="bdContactContent" class="height150"></textarea>
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+                <hr class="lineLg">
+                <div class="privacyCheckWrap">
+                    <p class="labelText mb0">個人情報保護方針に同意<span class="pointText4">*</span></p>
+                    <div class="privacyCheck">
+                        <p class="textMd basicText4"><span class="pointText1 u">個人情報保護方針</span>に同意の上、送信ください</p>
+                        <ul class="checkList">
+                            <li>
+                                <input type="checkbox" name="" id="privacyCheck">
+                                <label for="privacyCheck">同意する</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- privacyCheckWrap end -->
+                <div class="infoRadiusBox">
+                    ※返信は翌営業日以降に順次対応させて頂きます。<br />
+                    ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
+                </div>
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupInquiry1');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">確認する</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 문의하기-1 end -->
+
+    <!-- 문의하기-2 start -->
+    <div class="popupWrap lg" id="popupInquiry2">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">お問い合わせ</h4>
+                <p class="ess1 pointText4 ta_r fb">* 必須</p>
+                <p class="pointText2 ta_c fb mt20">お問い合わせはこちらのフォームよりお願いいたします</p>
+                <ul class="formGroup mt30">
+                    <li>
+                        <div class="half">
+                            <p class="labelText">お名前<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="idUserName" title="姓" placeholder="姓" value="koo" disabled></li>
+                                <li><input type="text" id="idUserName2" title="名" placeholder="名" value="eonjung" disabled></li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">お名前(フリガナ)<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ" value="グ" disabled></li>
+                                <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ" value="オンジョン" disabled></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                            <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし"  value="08064965874" disabled/>
+                            <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                        </div>
+                        <div class="half">
+                            <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                            <input type="text" id="bdMemberID" placeholder="" value="Mari992@naver.com" disabled />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
+                            <ul class="checkList checkListInline checkListMTwolines">
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory1" checked>
+                                    <label for="bdCategory1">商品について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory2" disabled>
+                                    <label for="bdCategory2">配送について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory3" disabled>
+                                    <label for="bdCategory3">注文について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory4" disabled>
+                                    <label for="bdCategory4">決済について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory5" disabled>
+                                    <label for="bdCategory5">ご意見、ご要望</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory6" disabled>
+                                    <label for="bdCategory6">その他</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
+                            <textarea name="bdContactContent" id="bdContactContent" class="height150" disabled>ｓｊふぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃｋｆじゃ；ｄｓふぃじゃふぃじゃｓ；いｆじゃｓ；ふぃじゃ；ｄｆじゃ；おｆｊあｋｆじゃｋｆじゃｆｊ ｓｊふぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃｋｆじゃ；ｄｓふぃじゃふぃじゃｓ；いｆじゃふぃじゃ；ｄｆじゃ；おｆｊ；あｋｆじゃｋｆじゃｆｊぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃ</textarea>
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+                <hr class="lineLg">
+                <div class="privacyCheckWrap">
+                    <p class="labelText mb0">個人情報保護方針に同意<span class="pointText4">*</span></p>
+                    <div class="privacyCheck">
+                        <p class="textMd basicText4"><span class="pointText1 u">個人情報保護方針</span>に同意の上、送信ください</p>
+                        <ul class="checkList">
+                            <li>
+                                <input type="checkbox" name="" id="privacyCheck" checked>
+                                <label for="privacyCheck">同意する</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- privacyCheckWrap end -->
+                <div class="infoRadiusBox">
+                    ※返信は翌営業日以降に順次対応させて頂きます。<br />
+                    ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
+                </div>
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupInquiry2');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">確認する</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 문의하기-2 end -->
+
+    <!-- 업자전용 예약페이지 start -->
+    <div class="popupWrap lg" id="popupBusinessReservation">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">業者専用予約</h4>
+                <p class="ess1 pointText4 ta_r fb">* 必須</p>
+                <p class="pointText2 ta_c fb mt20">業者専用予約ページです</p>
+                <ul class="formGroup mt30">
+                    <li>
+                        <div class="full">
+                            <label for="bdBusinessName">業者名<span class="pointText4">*</span></label>
+                            <input type="text" id="bdBusinessName" placeholder="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <p class="labelText">ご担当者名<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="idUserName" title="姓" placeholder="姓"></li>
+                                <li><input type="text" id="idUserName2" title="名" placeholder="名"></li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">ご担当者名(フリガナ)<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ"></li>
+                                <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                            <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし" />
+                            <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                        </div>
+                        <div class="half">
+                            <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                            <input type="text" id="bdMemberID" placeholder="" />
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+                <hr class="lineLg">
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupBusinessReservation');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">次へ</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 업자전용 예약페이지 end -->
+
+    <!-- 업자전용 문의하기-1 start -->
+    <div class="popupWrap lg" id="popupBusinessInquiry1">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">業者専用お問い合わせ</h4>
+                <p class="ess1 pointText4 ta_r fb">* 必須</p>
+                <p class="pointText2 ta_c fb mt20">お問い合わせはこちらのフォームよりお願いいたします</p>
+                <ul class="formGroup mt30">
+                    <li>
+                        <div class="full">
+                            <label for="bdBusinessName">業者名<span class="pointText4">*</span></label>
+                            <input type="text" id="bdBusinessName" placeholder="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <p class="labelText">ご担当者名<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="idUserName" title="姓" placeholder="姓"></li>
+                                <li><input type="text" id="idUserName2" title="名" placeholder="名"></li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">ご担当者名(フリガナ)<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="bdNickname" title="セイ" placeholder="セイ"></li>
+                                <li><input type="text" id="bdNickname2" title="メイ" placeholder="メイ"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                            <input type="text" id="bdPhone" placeholder="半角数字ハイフンなし" />
+                            <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                        </div>
+                        <div class="half">
+                            <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                            <input type="text" id="bdMemberID" placeholder="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
+                            <ul class="checkList checkListInline checkListMTwolines">
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory1">
+                                    <label for="bdCategory1">商品について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory2">
+                                    <label for="bdCategory2">業務提携について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory3">
+                                    <label for="bdCategory3">イベントについて</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory4">
+                                    <label for="bdCategory4">ご意見、ご要望</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory6">
+                                    <label for="bdCategory6">その他</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
+                            <textarea name="bdContactContent" id="bdContactContent" class="height150"></textarea>
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+                <hr class="lineLg">
+                <div class="infoRadiusBox">
+                    ※返信は翌営業日以降に順次対応させて頂きます。<br />
+                    ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
+                </div>
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupBusinessInquiry1');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">確認する</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 업자전용 문의하기-1 end -->
+
+    <!-- 업자전용 문의하기-1 start -->
+    <div class="popupWrap lg" id="popupBusinessInquiry2">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">業者専用お問い合わせ</h4>
+                <p class="ess1 pointText4 ta_r fb">* 必須</p>
+                <p class="pointText2 ta_c fb mt20">お問い合わせはこちらのフォームよりお願いいたします</p>
+                <ul class="formGroup mt30">
+                    <li>
+                        <div class="full">
+                            <label for="bdBusinessName">業者名<span class="pointText4">*</span></label>
+                            <input type="text" id="bdBusinessName" value="(株)newtree" placeholder="" disabled />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <p class="labelText">ご担当者名<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="idUserName" title="姓" value="koo" placeholder="姓" disabled></li>
+                                <li><input type="text" id="idUserName2" value="eonjung" title="名" placeholder="名" disabled></li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">ご担当者名(フリガナ)<span class="pointText4">*</span></p>
+                            <ul class="half">
+                                <li><input type="text" id="bdNickname" value="グ" title="セイ" placeholder="セイ" disabled></li>
+                                <li><input type="text" id="bdNickname2" value="オンジョン" title="メイ" placeholder="メイ" disabled></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <label for="bdPhone">電話番号<span class="pointText4">*</span></label>
+                            <input type="text" id="bdPhone" value="08064965874" placeholder="半角数字ハイフンなし" disabled />
+                            <p class="ess1">日中連絡可能な電話番号を入力下さい</p>
+                        </div>
+                        <div class="half">
+                            <label for="bdMemberID">メールアドレス<span class="pointText4">*</span></label>
+                            <input type="text" id="bdMemberID" value="Mari992@naver.com" placeholder="" disabled />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <p class="labelText">お問い合わせカテゴリー<span class="pointText4">*</span></p>
+                            <ul class="checkList checkListInline checkListMTwolines">
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory1" disabled>
+                                    <label for="bdCategory1">商品について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory2" checked>
+                                    <label for="bdCategory2">業務提携について</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory3" disabled>
+                                    <label for="bdCategory3">イベントについて</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory4" disabled>
+                                    <label for="bdCategory4">ご意見、ご要望</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="bdCategory" id="bdCategory6" disabled>
+                                    <label for="bdCategory6">その他</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <label for="bdMemberID">お問い合わせ内容<span class="pointText4">*</span></label>
+                            <textarea name="bdContactContent" id="bdContactContent" class="height150" disabled>ｓｊふぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃｋｆじゃ；ｄｓふぃじゃふぃじゃｓ；いｆじゃｓ；ふぃじゃ；ｄｆじゃ；おｆｊあｋｆじゃｋｆじゃｆｊ ｓｊふぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃｋｆじゃ；ｄｓふぃじゃふぃじゃｓ；いｆじゃふぃじゃ；ｄｆじゃ；おｆｊ；あｋｆじゃｋｆじゃｆｊぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃぁｓｆじゃｓｆじゃｓｋｆじゃｓｋｄｆじゃ</textarea>
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+                <hr class="lineLg">
+                <div class="infoRadiusBox">
+                    ※返信は翌営業日以降に順次対応させて頂きます。<br />
+                    ※お問い合わせが集中した場合・お問い合わせの内容によっては、返信にお時間をいただく場合がございます。
+                </div>
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupBusinessInquiry2');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">確認する</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 업자전용 문의하기-1 end -->
+
+    <!-- 장바구니 변경 start -->
+    <div class="popupWrap lg" id="popupCart">
+        <div class="popupCenter">
+            <div class="popupInner">
+                <h4 class="popupTitle">内容変更</h4>
+                <div class="cartProductInfo">
+                    <div class="img"><img src="../assets/images/ex_product_banner03.jpg" alt=""></div>
+                    <div class="text">
+                        <p class="title">ウォーターカラーリーフ[ノースリーブ]</p>
+                        <p class="option">
+                            カラー : BLUE / サイズ : L~2L<br />
+                            受取日時 : 2023.05.05 09:00~12:00 / 返却日時 : 2023.05.07 12:00~18:00
+                        </p>
+                    </div>
+                    <div class="itemQuantity">
+                        <button type="button" class="down" disabled="">-</button>
+                        <input type="text" class="quantity" value="1" readonly="">
+                        <button type="button" class="up">+</button>
+                    </div>
+                    <div class="info">
+                        <p class="day">2泊3日</p>
+                        <p class="price">3,500 <em>円</em></p>
+                        <p>(クリーニング代、消費税込み)</p>
+                    </div>
+                </div>
+                <div class="productTotal">
+                    <span>利用金額</span>
+                    <span>4,000 <em>円</em></span>
+                    <p>(クリーニング代、消費税込み)</p>
+                </div>
+
+                <hr class="lineLg">
+
+                <ul class="formGroup">
+                    <li>
+                        <div class="full">
+                            <p class="labelText">受取/返却場所</p>
+                            <ul class="checkList checkListInline checkListFourlines">
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase01">
+                                    <label for="orderCase01">沖縄本島店舗 受取・返却<br/><span class="pointText1">[2泊3日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase02">
+                                    <label for="orderCase02">沖縄本島店舗 受取のみ配送<br/><span class="pointText1">[3泊4日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase03">
+                                    <label for="orderCase03">沖縄本島店舗 返却のみ配送<br/><span class="pointText1">[3泊4日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase04">
+                                    <label for="orderCase04">沖縄本島 往復配送<br/><span class="pointText1">[4泊5日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase05">
+                                    <label for="orderCase05">沖縄県外 往復配送<br/><span class="pointText1">[7泊8日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase06">
+                                    <label for="orderCase06">宮古島・石垣島 往復配送<br/><span class="pointText1">[7泊8日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase07">
+                                    <label for="orderCase07">竹富島 往復配送<br/><span class="pointText1">[10泊11日]</span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="orderCase" id="orderCase08">
+                                    <label for="orderCase08">事前試着配送<br/><span class="pointText1">[2泊3日]</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <p class="labelText">受取日</p>
+                            <ul class="half">
+                                <li><input type="text" class="datepicker" value="" placeholder="" /></li>
+                                <li>
+                                    <div class="selectBox type2">
+                                        <button type="button" class="btnSelect" title="" data-code="">選択</button>
+                                        <ul class="selectList">
+                                            <li><a href="#" data-code="">09:00</a></li>
+                                            <li><a href="#" data-code="">10:00</a></li>
+                                            <li><a href="#" data-code="">11:00</a></li>
+                                            <li><a href="#" data-code="">12:00</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="half">
+                            <p class="labelText">返却日</p>
+                            <ul class="half">
+                                <li><input type="text" class="datepicker" value="" placeholder="" /></li>
+                                <li>
+                                    <div class="selectBox type2">
+                                        <button type="button" class="btnSelect" title="" data-code="">選択</button>
+                                        <ul class="selectList">
+                                            <li><a href="#" data-code="">09:00</a></li>
+                                            <li><a href="#" data-code="">10:00</a></li>
+                                            <li><a href="#" data-code="">11:00</a></li>
+                                            <li><a href="#" data-code="">12:00</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="full">
+                            <p class="labelText">商品</p>
+                            <div class="selectBox type2">
+                                <button type="button" class="btnSelect" title="" data-code="">選択</button>
+                                <ul class="selectList">
+                                    <li><a href="#" data-code=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="half">
+                            <p class="labelText">カラー</p>
+                            <input type="text" id="bdColor">
+                        </div>
+                        <div class="half">
+                            <p class="labelText">サイズ</p>
+                            <input type="text" id="bdSize">
+                        </div>
+                    </li>
+                </ul><!-- formGroup end -->
+
+                <hr class="lineLg">
+
+                <div class="btnGroup mt40">
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgWhite" onclick="popupClose('#popupCart');">閉じる</button>
+                    <button type="button" class="btn btnLg btnRadiusLg btnHalf btnMFull btnBgBlue">変更</button>
+                </div>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 장바구니 변경 end -->
+
+    <!-- 방문시착 예약확인 start -->
+    <div class="popupWrap md" id="popupFittingLogin">
+        <div class="popupCenter">
+            <div class="popupInner radius10">
+                <div class="inner500">
+                    
+                    <div class="loginGroup">
+                        <div class="logo"><img src="../assets/images/logo.svg" alt="" /></div>
+                        <h4 class="popupTitle">来店試着予約確認</h4>
+                        <strong class="popupText">IDとパスワードを入力してください</strong>
+                        <ul class="formGroup">
+                            <li>
+                                <div class="full">
+                                    <input type="text" id="bdMemberID" title="ID" placeholder="ID(メールアドレス)を入力してください">
+                                </div>
+                                <div class="full">
+                                    <input type="text" id="bdMemberPW" title="パスワード" placeholder="パスワードを入力してください">
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">ログイン</button>
+                        <hr class="lineDash" />
+                        <h4 class="popupTitle">非会員の予約確認</h4>
+                        <strong class="popupText">予約番号と予約時に登録したパスワードを入力してください</strong>
+                        <ul class="formGroup">
+                            <li>
+                                <div class="full">
+                                    <input type="text" id="bdNonMemberNumber" title="予約番号" placeholder="予約番号を入力してください">
+                                </div>
+                                <div class="full">
+                                    <input type="text" id="bdNonMemberPW" title="パスワード" placeholder="パスワードを入力してください">
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btnLg btnRadiusLg btnFull btnBgBlue">確認</button>
+                    </div><!-- loginGroup end -->
+                </div><!-- inner500 end -->
+                <button type="button" class="btnPopupClose" onclick="popupClose('#popupFittingLogin');">閉じる</button>
+            </div><!-- popupInner end -->
+        </div><!-- popupCenter end -->
+    </div><!-- popupWrap end -->
+    <!-- 방문시착 예약확인 end -->
+
+    <script>
+    $.datepicker.setDefaults({
+        closeText: "close",
+        prevText: "prev",
+        nextText: "next",
+        currentText: "today",
+        monthNames: ["1月", "2月", "3月", "4月", "5月", "6月",
+        "7月", "8月", "9月", "10月", "11月", "12月"
+        ],
+        monthNamesShort: ["1月", "2月", "3月", "4月", "5月", "6月",
+        "7月", "8月", "9月", "10月", "11月", "12月"
+        ],
+        dayNames: ["日", "月", "火", "水", "木", "金", "土"],
+        dayNamesShort: ["日", "月", "火", "水", "木", "金", "土"],
+        dayNamesMin: ["日", "月", "火", "水", "木", "金", "土"],
+        weekHeader: "주",
+        dateFormat: "yy-mm-dd", // ex)yy年 mm月 dd日
+        firstDay: 0,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: "年"
+    })
+
+    $(".datepicker").datepicker({
+        minDate: 0
+    })
+    </script>
+</body>
+</html>

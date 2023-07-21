@@ -1,0 +1,9 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99984 18.9997C14.9703 18.9997 18.9997 14.9703 18.9997 9.99984C18.9997 5.02936 14.9703 1 9.99984 1C5.02936 1 1 5.02936 1 9.99984C1 14.9703 5.02936 18.9997 9.99984 18.9997Z" fill="white" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M10 1V3.53562" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M1 10H3.53562" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M10 18.9991V16.457" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M18.9991 10H16.457" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+<path d="M6.57031 10.0007H9.99821V4.73047" fill="white"/>
+<path d="M6.57031 10.0007H9.99821V4.73047" stroke="#0394B3" stroke-width="1.5" stroke-linejoin="bevel"/>
+</svg>

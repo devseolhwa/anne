@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url(./swiper.min.css);
+
+
+.menuContainer{position:relative; clear:both; width:1280px;height:60px;text-align:center; background:#fff;overflow:hidden; margin-top: 70px;}
+.menuContainer.fixed{position:fixed;left:0;}
+.menuContainer::after{position:absolute;left:0;bottom:0;/*background:#D4D4D4;*/ content:""; height:1px;width:100%;display:block;}
+.menuContainer ul.swiper-wrapper{justify-content:center;text-align:center}
+.menuContainer li.swiper-slide{display:inline-block;position:relative; width:20%; border-bottom: 1px solid #d4d4d4;}
+.menuContainer li a{font-size:16px; font-weight: 500;color:#333;letter-spacing:-0.6px;line-height:23px; padding: 18px 0px; width: 100%;
+    display: inline-block;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;				
+}
+.menuContainer li:after{content:""; position:absolute; bottom:-1px; left:50%;  width:0; height:1px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;		
+}
+
+.menuContainer li.on:after, .menuContainer li:hover:after{left:0; width:100%;background:#0394B3;}
+.menuContainer li.on a, .menuContainer li a:hover{color: #0394B3;}
+
+
+.menuContainer.add li.swiper-slide{width: 25%;}
+
+/* */
+.guideBox{}
+
+
+
+
+
+@media screen and (max-width: 766px){    
+    .menuContainer{width: 100%; height: 40px; margin-top: 40px;}
+    .menuContainer::after{background: #D4D4D4;}
+    .menuContainer li.swiper-slide {width: auto; padding: 0 15px; margin-right: 10px; margin: 0; border: none;}
+    .menuContainer li.swiper-slide:last-child{margin-right: 0;}
+    .menuContainer li a {font-size:12px;line-height: 40px;padding: 0;}
+    .menuContainer li:after{bottom:0}
+    .menuContainer ul.swiper-wrapper {justify-content: flex-start;}
+    .hassticky2 .menuContainer ul.swiper-wrapper{padding:0 16px;box-sizing:border-box}
+    .hassticky2 .menuContainer li.swiper-slide a{padding:0 27px}
+    .hassticky2 .menuContainer li.swiper-slide + li.swiper-slide{padding-left:0}
+    .hassticky2 .menuContainer li:first-child a{padding-left:0}
+    
+    
+    .menuContainer.add{width: calc(100% - 18px); margin: 0 auto;}
+    .menuContainer.add ul.swiper-wrapper{justify-content: center;}
+    .menuContainer.add li.swiper-slide{width: auto; padding: 0 15px;}
+}
+
+
+
+
+
+
+
+

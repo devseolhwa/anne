@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anne</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+    
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">本文に移動</a><!-- 본문바로가기 -->
+        <a href="#">メニューに移動</a><!-- 메뉴바로가기 -->
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="topMenu">
+                <div class="topMenuInner">
+                    <a href="#">ログイン</a>
+                    <a href="#">新規会員登録</a>
+                    <a href="#">予約確認</a>
+                    <a href="#" class="selected">アクセス</a>
+                    <a href="#">配送案内</a>
+                </div>
+            </div>
+            <div class="headerWrap">
+                <div class="headerInner">
+                    <h1 class="logo"><a href="#"><img src="../assets/images/logo.svg" alt="Anneアン"></a></h1>
+                    <div class="searchWrap">
+                        <form>
+                            <input type="text" title="商品検索" placeholder="商品検索" />
+                            <button type="button">検索</button>
+                        </form>
+                    </div>
+                    <div class="headerInfo">
+                        <ul class="userInfo">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_cart.svg" alt="">
+                                    <span class="pointText1">10</span>点&nbsp;&nbsp;/&nbsp;&nbsp;<span class="pointText1">35,000</span>円
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_star.svg" alt="">
+                                    お気に入り
+                                </a>
+                            </li>
+                            <li><a href="#" class="btnGreen">業者専用 予約はこちら</a></li>
+                        </ul>
+                        <ul class="inquiryInfo">
+                            <li><a href="#"><img src="../assets/images/icon_ask.svg" alt="">よくある質問</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_inquiry.svg" alt="">お問い合わせ</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_direction.svg" alt="">来店試着予約</a></li>
+                        </ul>
+                    </div>
+                    <div class="mheaderBtnGroup">
+                        <button type="button" class="btnSearch"><img src="../assets/images/icon_search_black.svg" alt=""></button><!-- 검색 -->
+                        <button type="button" class="btnCart"><img src="../assets/images/icon_cart_m.svg" alt=""></button><!-- 장바구니 -->
+                        <button type="button" class="btnGuide"><img src="../assets/images/icon_guide_m.svg" alt=""></button><!-- 이용가이드 -->
+                        <button type="button" class="btnDirection"><img src="../assets/images/icon_direction_m.svg" alt=""></button><!-- 위치 -->
+                    </div>
+                </div>
+            </div><!-- headerWrap end -->
+            <div class="mNav">
+                <a href="#">かりゆしレンタル</a>
+                <a href="#">その他レンタル</a>
+                <a href="#">配送案内</a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">ご利用ガイド</a>
+                        <ul>
+                            <li><a href="#">ご予約の流れ</a></li>
+                            <li><a href="#">受取 ・ 返却</a></li>
+                            <li><a href="#">変更 ・ キャンセル</a></li>
+                            <li><a href="#">お支払い</a></li>
+                            <li><a href="#">破損 ・ 紛失</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">かりゆしレンタル</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">その他レンタル</a>
+                        <ul>
+                            <li><a href="#">パンツ</a></li>
+                            <li><a href="#">スカート</a></li>
+                            <li><a href="#">ストール</a></li>
+                            <li><a href="#">カバン</a></li>
+                            <li><a href="#">靴</a></li>
+                            <li><a href="#">アクセサリー</a></li>
+                            <li><a href="#">花冠・ブーケ</a></li>
+                            <li><a href="#">お子様王冠・蝶ネクタイ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">配送案内</a>
+                        <ul>
+                            <li><a href="#">沖縄本島</a></li>
+                            <li><a href="#">宮古島 · 石垣島</a></li>
+                            <li><a href="#">竹富島</a></li>
+                            <li><a href="#">沖縄県外</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">スペシャル衣装レンタル</a>
+                        <ul>
+                            <li><a href="#">ドレス ・スーツ</a></li>
+                            <li><a href="#">琉装</a></li>
+                            <li><a href="#">韓服〔チマ、チョゴリ）</a></li>
+                            <li><a href="#">韓国学生制服</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">オリジナルAnne商品購入</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">インフォメーション</a>
+                        <ul>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">業者専用予約</a></li>
+                            <li><a href="#">業者専用お問い合わせ</a></li>
+                            <li><a href="#">イベント</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">その他</a>
+                        <ul>
+                            <li><a href="#">会社案内</a></li>
+                            <li><a href="#">採用情報</a></li>
+                            <li><a href="#">ログイン</a></li>
+                            <li><a href="#">新規会員登録</a></li>
+                            <li><a href="#">予約確認</a></li>
+                            <li><a href="#">来店試着予約</a></li>
+                            <li><a href="#">お気に入り</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">特定商取引法に基づく表示</a></li>
+                            <li><a href="#">個人情報取扱方針</a></li>
+                            <li><a href="#">汚損/破損に関する同意書</a></li>
+                            <li><a href="#">変更/キャンセル/返金規定</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btnGnbClose">メニューを閉じる</button><!-- 메뉴닫기 -->
+            </nav>
+        </header>
+
+        <div class="mfixmenu">
+            <button type="button" class="btnGnbOpen"><img src="../assets/images/icon_gnb_open.svg" alt=""></button><!-- 메뉴열기 -->
+            <button type="button" class="btnLoginMypage"><img src="../assets/images/icon_mypage.svg" alt=""></button><!-- 로그인&마이페이지 -->
+            <button type="button" class="btnReservationCheck"><img src="../assets/images/icon_reservation_check.svg" alt=""></button><!-- 예약확인 -->
+            <button type="button" class="btnGreen">業者専用予約</button><!-- 업자전용예약팝업 -->
+        </div>
+
+        <div class="container">
+            <div id="contents">
+
+                <h3 class="titleLg">かりゆしレンタル</h3>
+                <p class="titleInfo">基本のレンタル料金は2泊3日、沖縄本島基準です (1泊延長料金 300円)</p>
+                <hr class="lineSm">
+
+                <div class="navType01">
+                    <a href="#">All</a>
+                    <a href="#">メンズ</a>
+                    <a href="#" class="on">レディース</a>
+                    <a href="#">キッズ</a>
+                </div>
+                <div class="navType02">
+                    <a href="#" class="on">シャツ</a>
+                    <a href="#">ワンピース</a>
+                    <a href="#">ブライズメイド</a>
+                </div>
+
+                <div class="productsListWrap">
+                    <div class="mSearchForm">
+                        <input type="text" title="商品検索" />
+                        <button type="button">検索</button>
+                    </div>
+                    <div class="dateForm">
+                        <h5>ご利用日選択</h5><!-- 이용일선택 -->
+                        <div class="calenderDateSm">
+                            <button type="button" class="prev"><img src="../assets/images/arrow_calendar_sm.png" alt=""></button>
+                            <strong>2023 年 4月</strong>
+                            <button type="button" class="next"><img src="../assets/images/arrow_calendar_sm.png" alt=""></button>
+                        </div>
+                        <div class="calenderTableSm">
+                            <table>
+                                <caption>calender(日, 月, 火, 水, 木, 金, 土)</caption>
+                                <colgroup>
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                    <col style="width: 14.28%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">日</th>
+                                        <th scope="col">月</th>
+                                        <th scope="col">火</th>
+                                        <th scope="col">水</th>
+                                        <th scope="col">木</th>
+                                        <th scope="col">金</th>
+                                        <th scope="col">土</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="sun"></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#;" title="1日">1</a></td>
+                                        <td><a href="#;" title="2日">2</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><a href="#;" title="3日">3</a></td>
+                                        <td><a href="#;" title="4日">4</a></td>
+                                        <td><a href="#;" title="5日">5</a></td>
+                                        <td><a href="#;" title="6日">6</a></td>
+                                        <td><a href="#;" title="7日">7</a></td>
+                                        <td class="today"><a href="#;" title="8日">8</a></td>
+                                        <td><a href="#;" title="9日">9</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><a href="#;" title="10日">10</a></td>
+                                        <td><a href="#;" title="11日">11</a></td>
+                                        <td><a href="#;" title="12日">12</a></td>
+                                        <td><a href="#;" title="13日">13</a></td>
+                                        <td><a href="#;" title="14日">14</a></td>
+                                        <td><a href="#;" title="15日">15</a></td>
+                                        <td><a href="#;" title="16日">16</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><a href="#;" title="17日">17</a></td>
+                                        <td><a href="#;" title="18日">18</a></td>
+                                        <td><a href="#;" title="19日">19</a></td>
+                                        <td><a href="#;" title="20日">20</a></td>
+                                        <td class="on"><a href="#;" title="21日">21</a></td>
+                                        <td><a href="#;" title="22日">22</a></td>
+                                        <td><a href="#;" title="23日">23</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><a href="#;" title="24日">24</a></td>
+                                        <td><a href="#;" title="25日">25</a></td>
+                                        <td><a href="#;" title="26日">26</a></td>
+                                        <td><a href="#;" title="27日">27</a></td>
+                                        <td><a href="#;" title="28日">28</a></td>
+                                        <td><a href="#;" title="29日">29</a></td>
+                                        <td><a href="#;" title="30日">30</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><a href="#;" title="31日">31</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- calenderTableSm end -->
+                        <div class="optionCaseWrap">
+                            <ul class="checkList">
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase01" checked>
+                                    <label for="optionCase01">沖縄本島店舗 受取・返却</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase02">
+                                    <label for="optionCase02">沖縄本島店舗 受取のみ配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase03">
+                                    <label for="optionCase03">沖縄本島店舗 返却のみ配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase04">
+                                    <label for="optionCase04">沖縄本島 往復配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase05">
+                                    <label for="optionCase05">沖縄県外 往復配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase06">
+                                    <label for="optionCase06">宮古島・石垣島 往復配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase07">
+                                    <label for="optionCase07">竹富島 往復配送</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="optionCase" id="optionCase08">
+                                    <label for="optionCase08">事前試着配送</label>
+                                </li>
+                            </ul>
+                        </div><!-- optionCaseWrap end -->
+                        <h5>カラー選択</h5><!-- 색상선택 -->
+                        <div class="optionCaseWrap">
+                            <ul class="checkList">
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck01"checked>
+                                    <label for="optionCheck01">全カラー</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck02"checked>
+                                    <label for="optionCheck02">ホワイト系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck03">
+                                    <label for="optionCheck03">ブルー系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck04">
+                                    <label for="optionCheck04">レッド/ワイン系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck05">
+                                    <label for="optionCheck05">イエロー系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck06">
+                                    <label for="optionCheck06">グリーン系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck07">
+                                    <label for="optionCheck07">ピンク系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck08">
+                                    <label for="optionCheck08">ブラック系</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="optionCheck09">
+                                    <label for="optionCheck09">パープル/ネイビー系</label>
+                                </li>
+                            </ul>
+                        </div><!-- optionCaseWrap end -->
+                        <button type="button" class="btn btnRadiusSm btnFull btnBgBlue btnMd">検索</button>
+                    </div><!-- dateForm end -->
+
+                    <div class="productsList">
+                        <p class="boardTotal">検索結果<span class="pointText1 fb">37</span>点の商品が検索されました</p>
+                        <div class="listType">
+                            <ul>
+                                <li class="on"><button type="button">在庫が多い順</button></li>
+                                <li><button type="button">人気商品順</button></li>
+                                <li><button type="button">新着順</button></li>
+                                <li><button type="button">価格が低い順</button></li>
+                                <li><button type="button">価格が高い順</button></li>
+                                <li><button type="button">レビューの多い商品順</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="productsBoard">
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner02.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner04.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner02.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner04.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner02.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="productsItem">
+                                <a href="#">
+                                    <div class="thumb">
+                                        <span class="label01">HOT</span>
+                                        <img src="../assets/images/ex_product_banner04.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p class="gender">メンズ</p>
+                                        <p class="title">ウォーターカラーリーフ</p>
+                                        <p class="color">GREEN ・ WINE ・ BLUE</p>
+                                        <p class="size"><span>(SIZE: XS~5L)</span>高級レーヨン100%</p>
+                                        <p class="price">3,500 円</p>
+                                        <p class="day">(2泊3日)</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- productsBoard end -->
+
+                        <div class="paging">
+                            <button type="button" id="pagePrev" disabled>이전</button>
+                            <button type="button" title="1page">1</button>
+                            <strong>2</strong>
+                            <button type="button" title="3page">3</button>
+                            <button type="button" id="pageNext">다음</button>
+                        </div>
+
+                    </div><!-- productsList end -->
+                </div><!-- productsListWrap end -->
+
+                <div class="quickBar">
+                    <a href="#">
+                        <span>配送案内</span>
+                        <p><img src="../assets/images/icon_fix_cart.svg" alt=""></p>
+                    </a>
+                    <a href="#">
+                        <span>お気に入り</span>
+                        <p><img src="../assets/images/icon_fix_star.svg" alt=""></p>
+                    </a>
+                    <a href="javascript:scrollToTop();">
+                        <span>TOP</span>
+                        <p><img src="../assets/images/icon_fix_top.svg" alt=""></p>
+                    </a>
+                </div><!-- quickBar end -->
+
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <div class="footerSliderWrap">
+                <div class="footerSliderInner">
+                    <div class="footerSlider">
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div><!-- footerSliderWrap end -->
+            <div class="footerLink">
+                <div class="footerLinkInner">
+                    <ul class="left">
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">個人情報取扱方針</a></li>
+                        <li><a href="#">特定商取引法に基づく表示</a></li>
+                        <li class="mobileHide"><a href="#" class="pointText5">業者専用お問い合わせ</a></li>
+                        <li class="mobileShowInline"><a href="#" class="pointText3">汚損/破損に関する同意書</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="#">会社案内</a>
+                        <a href="#">採用情報</a>
+                        <a href="#">サイトマップ</a>
+                    </div>
+                </div>
+            </div><!-- footerLinkWrap end -->
+            <div class="footerInfo">
+                <div class="footerInfoInner">
+                    <div class="footerCall">
+                        Anne お問い合わせ(年中無休)
+                        <strong>098-851-4326</strong>
+                    </div>
+                    <p>〒901-0221 沖縄県豊見城市座安 208-2 SOUTH ZA I 1階</p>
+                    <p>Email : anne@odal.co.kr</p>
+                    <p class="pointText1">電話受付 09:00~17:00 I かりゆし受け取り 09:00~18:00</p>
+                    <p>尚、お受取り当日に限り航空機遅延などは別対応致します</p>
+                    <p>かりゆしロッカー返却 (24時間対応)</p>
+                    <p>GoogleMapで <span class="pointText1">“Anneアン”</span> 検索 カーナビのマップコード 133.238.24.187</p>
+                    <div class="footerSns">
+                        <a href="#"><img src="../assets/images/icon_instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div><!-- footerInfo end -->
+            <div class="copyright">Copyright(C) Odal. All Rights Reserved.</div>
+        </footer>
+    </div><!-- wrap end -->
+
+</body>
+</html>

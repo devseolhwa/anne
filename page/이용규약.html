@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anne</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contents.css">
+    
+    <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/lib/slick.min.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/contents.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#contents">本文に移動</a><!-- 본문바로가기 -->
+        <a href="#">メニューに移動</a><!-- 메뉴바로가기 -->
+    </div>
+
+    <div class="wrap">
+        <header>
+            <div class="topMenu">
+                <div class="topMenuInner">
+                    <a href="#">ログイン</a>
+                    <a href="#">新規会員登録</a>
+                    <a href="#">予約確認</a>
+                    <a href="#" class="selected">アクセス</a>
+                    <a href="#">配送案内</a>
+                </div>
+            </div>
+            <div class="headerWrap">
+                <div class="headerInner">
+                    <h1 class="logo"><a href="#"><img src="../assets/images/logo.svg" alt="Anneアン"></a></h1>
+                    <div class="searchWrap">
+                        <form>
+                            <input type="text" title="商品検索" placeholder="商品検索" />
+                            <button type="button">検索</button>
+                        </form>
+                    </div>
+                    <div class="headerInfo">
+                        <ul class="userInfo">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_cart.svg" alt="">
+                                    <span class="pointText1">10</span>点&nbsp;&nbsp;/&nbsp;&nbsp;<span class="pointText1">35,000</span>円
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/icon_star.svg" alt="">
+                                    お気に入り
+                                </a>
+                            </li>
+                            <li><a href="#" class="btnGreen">業者専用 予約はこちら</a></li>
+                        </ul>
+                        <ul class="inquiryInfo">
+                            <li><a href="#"><img src="../assets/images/icon_ask.svg" alt="">よくある質問</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_inquiry.svg" alt="">お問い合わせ</a></li>
+                            <li><a href="#"><img src="../assets/images/icon_direction.svg" alt="">来店試着予約</a></li>
+                        </ul>
+                    </div>
+                    <div class="mheaderBtnGroup">
+                        <button type="button" class="btnSearch"><img src="../assets/images/icon_search_black.svg" alt=""></button><!-- 검색 -->
+                        <button type="button" class="btnCart"><img src="../assets/images/icon_cart_m.svg" alt=""></button><!-- 장바구니 -->
+                        <button type="button" class="btnGuide"><img src="../assets/images/icon_guide_m.svg" alt=""></button><!-- 이용가이드 -->
+                        <button type="button" class="btnDirection"><img src="../assets/images/icon_direction_m.svg" alt=""></button><!-- 위치 -->
+                    </div>
+                </div>
+            </div><!-- headerWrap end -->
+            <div class="mNav">
+                <a href="#">かりゆしレンタル</a>
+                <a href="#">その他レンタル</a>
+                <a href="#">配送案内</a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">ご利用ガイド</a>
+                        <ul>
+                            <li><a href="#">ご予約の流れ</a></li>
+                            <li><a href="#">受取 ・ 返却</a></li>
+                            <li><a href="#">変更 ・ キャンセル</a></li>
+                            <li><a href="#">お支払い</a></li>
+                            <li><a href="#">破損 ・ 紛失</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">かりゆしレンタル</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">その他レンタル</a>
+                        <ul>
+                            <li><a href="#">パンツ</a></li>
+                            <li><a href="#">スカート</a></li>
+                            <li><a href="#">ストール</a></li>
+                            <li><a href="#">カバン</a></li>
+                            <li><a href="#">靴</a></li>
+                            <li><a href="#">アクセサリー</a></li>
+                            <li><a href="#">花冠・ブーケ</a></li>
+                            <li><a href="#">お子様王冠・蝶ネクタイ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">配送案内</a>
+                        <ul>
+                            <li><a href="#">沖縄本島</a></li>
+                            <li><a href="#">宮古島 · 石垣島</a></li>
+                            <li><a href="#">竹富島</a></li>
+                            <li><a href="#">沖縄県外</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">スペシャル衣装レンタル</a>
+                        <ul>
+                            <li><a href="#">ドレス ・スーツ</a></li>
+                            <li><a href="#">琉装</a></li>
+                            <li><a href="#">韓服〔チマ、チョゴリ）</a></li>
+                            <li><a href="#">韓国学生制服</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">オリジナルAnne商品購入</a>
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">メンズ</a></li>
+                            <li><a href="#">レディース</a></li>
+                            <li><a href="#">キッズ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">インフォメーション</a>
+                        <ul>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">業者専用予約</a></li>
+                            <li><a href="#">業者専用お問い合わせ</a></li>
+                            <li><a href="#">イベント</a></li>
+                        </ul>
+                    </li>
+                    <li class="mGnbLi">
+                        <a href="#">その他</a>
+                        <ul>
+                            <li><a href="#">会社案内</a></li>
+                            <li><a href="#">採用情報</a></li>
+                            <li><a href="#">ログイン</a></li>
+                            <li><a href="#">新規会員登録</a></li>
+                            <li><a href="#">予約確認</a></li>
+                            <li><a href="#">来店試着予約</a></li>
+                            <li><a href="#">お気に入り</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">特定商取引法に基づく表示</a></li>
+                            <li><a href="#">個人情報取扱方針</a></li>
+                            <li><a href="#">汚損/破損に関する同意書</a></li>
+                            <li><a href="#">変更/キャンセル/返金規定</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" class="btnGnbClose">メニューを閉じる</button><!-- 메뉴닫기 -->
+            </nav>
+        </header>
+
+        <div class="mfixmenu">
+            <button type="button" class="btnGnbOpen"><img src="../assets/images/icon_gnb_open.svg" alt=""></button><!-- 메뉴열기 -->
+            <button type="button" class="btnLoginMypage"><img src="../assets/images/icon_mypage.svg" alt=""></button><!-- 로그인&마이페이지 -->
+            <button type="button" class="btnReservationCheck"><img src="../assets/images/icon_reservation_check.svg" alt=""></button><!-- 예약확인 -->
+            <button type="button" class="btnGreen">業者専用予約</button><!-- 업자전용예약팝업 -->
+        </div>
+
+        <div class="container">
+            <div id="contents">
+                <h3 class="titleLg">利用規約</h3>
+                <hr class="lineSm">
+
+                <div class="lineTopBottom mt50">
+                    <div class="inner1100">
+                        
+
+                        <!-- 에디터영역 start -->
+                        <div style="padding: 28px 30px;background: #F9F9F9;border-radius: 10px;border: 1px solid #D6D6D6;box-sizing: border-box;">
+                            <p style="margin-bottom: 22px;color: #333;font-size: 18px;font-weight: 700;line-height: 30px;letter-spacing: -0.6px;">【利用規約】</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第1条(目的)</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.利用規約は、電気通信事業法及び同法施行令によって「（株）ODAL」（以下当社という）が運営するインターネット商品サービス（以下、サービス）の「Anne」サイバーモールの利用条件、手続き、そして会員規則に関する事項とその他必要な事項を規定することを目的としています。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第2条（規約の効力と準用）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.本規約の内容は、サービス画面に掲示したり、その他の方法で会員に公知することで効力が発生します。2.当社は、この規定を変更することができ、変更された規定は、第1項と同様の方法で公知することにより効力が発生します。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第3条（規約外準則）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.この約款に明示されていない事項は、電気通信、本法、電気通信事業法及びその他関係法令の規定に従います。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第4条（用語の定義）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.この規定で使用する用語の定義は次のとおりです。<br>
+                                イ）利用者：当社が提供するサービスを利用するすべての人<br>
+                                ロ）会員：利用者のうち、当社とサービス利用契約を締結した者<br>
+                                ハ）ユーザID：会員の識別と会員のサービス利用のために会員が自ら設定し会社が承認した文字または構成された組み合わせ<br>
+                                ニ）パスワード：会員が付与されたユーザ名（ID）と一致した会員であることを確認し、会員自身の秘密を保護するために定められた文字と数字の組み合わせ<br>
+                                ホ）解約：会社または会員がサービス開通後、利用契約を解約すること
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第5条（利用契約の成立）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.利用契約は、利用者の利用申し込みに対する当社の利用承諾と利用者の約款に合意のもと成立します。<br>
+                                2.会員に登録してサービスの利用を希望する者は、当社から要求される個人情報を提供する必要があります。<br>
+                                3.会員に登録してサービスの利用を希望する者は、指定されたオンライン加入申し込みフォームに必須事項 を提供し、その他の情報は選択事項として提供します。- 利用者番号（ID） - パスワード（PASSWORD） - 名前（実名/ローマ字） - 電話番号と住所<br>
+                                4.上記の内容に加えて、当社が必要とする内容を追加で加えることができ、この事実を公告します。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第6条（利用申し込みの承諾）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、利用者が第3条で定めた事項を正確に記載して利用申請をしたとき承諾します。<br>
+                                2.当社は、次に該当する利用申請に対しては承諾を留保することができます。<br>
+                                - 設備の余裕がない場合、または技術上支障がある場合<br>
+                                - その他当社が必要と認めた場合<br>
+                                3.当社は、次に該当する利用申請に対してはこれを承諾しないことがあります。<br>
+                                - 名前が実名ではない場合<br>
+                                - 他の人の名義を使用して申請した場合<br>
+                                - 利用申請時に必要内容を虚偽で記載して申請した場合<br>
+                                - 社会の安寧秩序または公序良俗を阻害する目的で申請した場合<br>
+                                - その他の当社が定める利用申請要件が不備した場合
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第7条（契約事項の変更）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.会員は、利用申し込み時に記載した事項が変更された場合には、オンラインを介して変更する必要があります。変更をせずに発生する利用者の被害に対する責任は利用者にあります。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第8条（個人情報の保護）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、サービス利用者の情報を収集する際は必ず当該利用者の同意を得て、必要な最小限の情報だけを収集し、利用者は、オンラインを介して頻繁に本人の個人情報を閲覧、訂正または削除することができます。<br>
+                                2. 当社は、お客様の同意がない限り、個人情報を第三者に開示することはありません。ただし、以下の事例に該当する場合はその限りではありません。ただし、次の各号に該当する場合には、例外とします。<br><br>
+                                
+                                イ） 法令に基づき裁判所や警察等の公的機関から要請があった場合<br>
+                                ロ） 法令に特別の規定がある場合<br>
+                                ハ）支払い及び回収のためにクレジットカード会社等に個人情報を開示する場合<br>
+                                ニ） サーバーの管理、事業の運営、商品の運送を他の事業者に委託する場合<br><br>
+                                
+                                当社は、個人情報の利用、提供、開示または訂正等に関する苦情その他の個人情報の取り扱いに関する苦情を適切かつ迅速に処理いたします。 苦情のお申し出は098-851-4326、ａｎｎｅ＠ｏｄａｌ.ｃｏ.ｋｒまでお願いします。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第9条（会員ID、メールアドレス、パスワード、管理の義務）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1. ID、メールアドレスとパスワードに関するすべての管理責任は会員にあります。会員に付与されたID（ID）、電子メール（E-mail）、パスワードの管理不十分、不正使用によって発生するすべての結果に対する責任は会員にあります。<br>
+                                2.自分のユーザ名（ID）、電子メール（E-mail）とパスワードが不正に使用された場合、会員は、必ず当社にその事実を通知します。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第10条（サービスの種類）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、サービスの内容や種類を変更することができ、変更はお知らせを通じてお知らせします。サービスの種類は以下の通りです。<br>
+                                イ）インターネットのオンラインを通じた結婚式の商品の予約/販売/レンタルサービス<br>
+                                ロ）インターネットのオンラインを通じたかりゆしウェア商品の販売/レンタルサービス<br>
+                                ハ）その他の旅行関連商品や情報サービス
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第11条（情報の提供）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.当社は、利用者がサービス利用中必要があると認められる多様な情報について電子メール、有線媒体、対応メールなどの方法で利用者に提供することができます。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第12条（サービス提供の中止）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、次の各号に該当する場合、サービスの一部もしくは全部の提供を停止することができます<br>
+                                イ）サービス用設備の保守など工事によるやむを得ない場合<br>
+                                ロ）電気通信事業法に規定された期間の通信事業者が電気通信サービスを中止した場合<br>
+                                ハ）国家非常事態、停電、サービス設備の障害またはサービス利用の暴走などで正常なサービス利用に支障がある場合
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第13条（当社のサービスを維持する責任）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.当社は、サービス提供装置を常に運用可能な状態に維持し、サービスを提供するための設備に障害が発生したり、またはその設備が滅失されるときに、これを迅速に修復、回復します。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第14条（利用者の義務）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.利用者は、サービスを利用する際は、次の各号の行為をしないでください。<br>
+                                イ）不正なIDを使用すること<br>
+                                ロ）サービスで得た情報を会社の事前承諾なしに会員の利用以外の目的で複製したり、これを出版及び放送などに使用したり、第三者に提供する行為<br>
+                                ハ）第三者の著作権などその他の権利を侵害する行為<br>
+                                二）犯罪につながると客観的に判断される行為<br>
+                                ホ）その他の関係法令に違反する行為<br><br>
+
+                                2.利用者は、この規定に規定する事項とサービス利用案内、お知らせに記載するか、別途お知らせした利用制限事項を遵守しなければします。<br>
+                                3.利用者は、会社の事前承諾なしにサービスを利用して営業活動を行うことができず、営業活動の結果と利用者が規定に違反した営業活動を利用して発生した結果についての責任を負いません。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第15条（料金の体系など）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社が提供するサービス料金体系は、次のとおりです。<br>
+                                - 登録：無料<br>
+                                - 商品関連情報の閲覧：無料<br>
+                                - 商品の関連サービスの予約/レンタルサービス：有料<br>
+                                - 当社はサービス料金を変更することができ、料金に関する詳細事項は、別にお知らせします。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第16条（契約の解除）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.会員が利用契約を解約しようとするときには、会員本人がオンラインを通じて会社に解約申し込みをしなければします。<br>
+                                2.当社は、会員が次の各号に該当する行為をした場合、事前の通知なしに利用契約を解約したり、期間を定めてサービス利用を停止することができます。<br>
+                                イ）不正なIDを使用するか、電子メール（E-mail）とパスワードを盗用した場合<br>
+                                ロ）サービス運営を故意に妨害した場合<br>
+                                ハ）公の秩序及び公序良俗に阻害される内容を故意に流布させた場合<br>
+                                二）他人の名誉を傷つけたり、不利益を与える場合<br>
+                                ホ）会員が国益または社会的公益を阻害する目的でサービス利用を計画または実行する場合<br>
+                                へ）他の会社が定めた利用条件に違反した場合
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第17条（利用制限に関する事項）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社が第16条2項各号の規定により利用制限をしようとする場合には、その理由、日時、期間、その他の事項を定めて電子メール（E-mail）やその他の方法により、その利用者や代理人に通知します。ただし、会社が緊急に利用を停止する必要があると認める場合には、その限りではあります。<br>
+                                2.第1項の規定により利用制限の通知を受けた利用者または代理人は、その利用停止の通知に対して異議がある場合、異議申立をすることができます。<br>
+                                3.当社は、第2項の規定による異議申請に対して、その確認のための期間まで利用停止を一時延期することができ、その結果を利用者又はその代理人に通知します。<br>
+                                4.当社は、利用停止期間中にその利用停止事由が解消されたことが確認された場合には、利用停止措置を直ちに解除します。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第18条（損害賠償に関する事項）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、無料サービスの利用に関連して利用者に発生した、いかなる損害についても責任を負いません。<br>
+                                2.当社は、有料で提供されるサービスに関連して、会社の帰責事由で発生するすべての損害について、関係法律が定める損害賠償を会員にいたします。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第19条（免責事項）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.当社は、天災地変またはこれに準ずる不可抗力によってサービスを提供することができない場合には、サービス提供に関する責任が免除されます。<br>
+                                2.当社は、会員の帰責事由によるサービス利用の障害に対して責任を負いません。<br>
+                                3.当社は、会員がサービスを利用して、期待される損益やサービスを通じて得た資料による損害に関して責任を負いません。<br>
+                                4.当社は、会員がサービスに掲載した情報、資料、事実の信頼性、正確性などの内容に関しては責任を負いません。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第20条（管轄裁判所）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.サービスの利用により発生した紛争について訴訟が提起された場合、会社の本社所在地を管轄する裁判所を管轄裁判所とします。</p>
+                            <p style="margin-bottom: 22px;color: #333;font-size: 18px;font-weight: 700;line-height: 30px;letter-spacing: -0.6px;">【かりゆしレンタル規約および利用条件】</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第1条（目的）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">1.本規約は、「Anne」のサイトで提供されるかりゆしレンタル商品の利用条件、手続き、そして会員規則に関する事項とその他必要な事項を規定することを目的としています。</p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第2条（利用条件と手続き）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.利用者は、レンタルサービス申請後、利用料の支払いが必要です。<br>
+                                2.利用者は、ウェディングドレス/小道具のレンタル後、返却元に返す義務を有し、当社は返却時、商品の汚損、破損が確認された場合追加料金を請求することがあります。<br>
+                                3.適用した商品の在庫切れで当日現地でレンタルが不可能な場合（前の利用者の破損返却、自然災害による商品の滅失等）には、他の商品と交換され、その商品の料金は全額返金されます。<br>
+                                4.利用者が錯誤に選択した製品の種類、サイズ、色などによる利用上の不具合や損害に対する責任は、当社にはありません。
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第3条（未返却/汚損返却規定）</p>
+                            <p style="margin-bottom: 30px;color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.汚損/破損の程度に応じて、以下の追加料金が発生します。 （1枚あたり）<br>
+                                - 洗濯完了後に追加請求がされることがあります。<br>
+                                イ）原状回復が可能<br>
+                                ①化粧品、飲食物の汚れ、水性ペン等： 2000円<br>
+                                ②ファスナー損傷などの修理が必要な場合：実際の修理費用[領収書添付]<br><br>
+
+                                ロ）原状回復不可能/紛失/未返却<br>
+                                ①メインドレス：5万円<br>
+                                ②セミドレス：2万円<br>
+                                ③ミニドレス：1万円<br>
+                                ④ヴィンテージドレス：7千円<br>
+                                ⑤韓服ドレス：2万円<br>
+                                ⑥タキシード：2万円<br>
+                                ⑦ウェディング小物（1点あたり）<br><br>
+
+                                1）靴、ロングベール：5千円<br>
+                                2）ショートベール：3千円<br>
+                                3）その他小物：1千円<br>
+                                ※破損返却により次のレンタルが不可の場合は、上記の追加料金を頂き、製品は利用者へお渡します（宅配便発送所要時間は10日〜1か月程度かかる場合があります）<br>
+                                ハ）遅延返却<br>
+                                ①ウェディングドレス、タキシード：遅延日数1日当たり:1千円<br>
+                                ②結婚式の小道具：遅延日数1日当たり:500円
+                            </p>
+                            <p style="margin-bottom: 6px;color: #333;font-size: 16px;font-weight: 500;line-height: 30px;letter-spacing: -0.6px;">第4条（変更/キャンセル規定）</p>
+                            <p style="color: #777;font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.6px;">
+                                1.すべての予約変更及びキャンセルは当社を通じてのみ行われております。<br>
+                                2. 変更及びキャンセル(お問い合わせ・ご要望)はメールにてお願い致します。<br>
+                                受付時間は、09：00〜17：00を基準にしております。<br>
+                                上記時間以外に受付された件につきましては、次の営業日を基準に処理致します。<br><br>
+                                
+                                ※ご予約完了後にご製品の種類、サイズ、色などの変更は在庫の範囲内でのみ可能であり、在庫がない場合には、出来かねませんのでご了承ください。<br><br>
+                                
+                                ※現地でのご製品の種類、サイズ、色などの変更は、在庫の範囲内でのみ可能であり、在庫がない場合には、出来かねませんのでご了承ください。<br>
+                                （特に不正確なサイズの入力によりレンタルが出来ない場合が頻繁にありますので、必ず正確なサイズでご予約お願致します）<br><br>
+                                
+                                =レンタル商品のキャンセル規定=<br>
+                                キャンセル料金は以下の通り頂戴いたします。<br><br>
+                                
+                                ○ 7日前のキャンセル：無料<br>
+                                ○ ６日～１日前のキャンセル：商品レンタル料金の30％<br>
+                                ○ 当日のキャンセル：商品レンタル料金の100％
+                            </p>
+                        </div>
+                        <!-- 에디터영역 end -->
+
+                    </div>
+                </div>
+
+            </div><!-- contents end -->
+        </div><!-- container end -->
+
+        <footer>
+            <div class="footerSliderWrap">
+                <div class="footerSliderInner">
+                    <div class="footerSlider">
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner01.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner02.jpg" alt=""></a></div>
+                        <div><a href="#"><img src="../assets/images/ex_footer_banner03.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div><!-- footerSliderWrap end -->
+            <div class="footerLink">
+                <div class="footerLinkInner">
+                    <ul class="left">
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">個人情報取扱方針</a></li>
+                        <li><a href="#">特定商取引法に基づく表示</a></li>
+                        <li class="mobileHide"><a href="#" class="pointText5">業者専用お問い合わせ</a></li>
+                        <li class="mobileShowInline"><a href="#" class="pointText3">汚損/破損に関する同意書</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="#">会社案内</a>
+                        <a href="#">採用情報</a>
+                        <a href="#">サイトマップ</a>
+                    </div>
+                </div>
+            </div><!-- footerLinkWrap end -->
+            <div class="footerInfo">
+                <div class="footerInfoInner">
+                    <div class="footerCall">
+                        Anne お問い合わせ(年中無休)
+                        <strong>098-851-4326</strong>
+                    </div>
+                    <p>〒901-0221 沖縄県豊見城市座安 208-2 SOUTH ZA I 1階</p>
+                    <p>Email : anne@odal.co.kr</p>
+                    <p class="pointText1">電話受付 09:00~17:00 I かりゆし受け取り 09:00~18:00</p>
+                    <p>尚、お受取り当日に限り航空機遅延などは別対応致します</p>
+                    <p>かりゆしロッカー返却 (24時間対応)</p>
+                    <p>GoogleMapで <span class="pointText1">“Anneアン”</span> 検索 カーナビのマップコード 133.238.24.187</p>
+                    <div class="footerSns">
+                        <a href="#"><img src="../assets/images/icon_instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+            </div><!-- footerInfo end -->
+            <div class="copyright">Copyright(C) Odal. All Rights Reserved.</div>
+        </footer>
+    </div><!-- wrap end -->
+
+</body>
+</html>
